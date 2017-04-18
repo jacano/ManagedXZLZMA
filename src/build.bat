@@ -4,4 +4,4 @@ msbuild xz/project/liblzma.sln /p:Configuration="Release" /p:Platform="ARM"
 
 msbuild ManagedLZMA.sln /p:Configuration="Release" /p:Platform="Any CPU"
 
-nuget pack ManagedLZMA.nuspec
+nuget pack ManagedXZLZMA.nuspec
