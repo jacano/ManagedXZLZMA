@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ManagedLZMA</id>
+        <version>1.0.0</version>
+        <authors>jacano</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>ManagedLZMA</description>
+    </metadata>
+    <files>
+	
+        <file src="build/net45/ManagedLZMA.targets" target="build/net45/ManagedLZMA.targets" />
+
+		<file src="ManagedLZMALib/bin/Release/netstandard1.2/ManagedLZMA.dll" target="lib/netstandard1.2/ManagedLZMA.dll" />
+		
+		<file src="lib/windows/x64/Release/liblzma.dll" target="runtimes/win7-x64/native/liblzma.dll" />
+		<file src="lib/windows/Win32/Release/liblzma.dll" target="runtimes/win7-x86/native/liblzma.dll" />
+		
+		<file src="lib/uwp/x64/Release/liblzma.dll" target="runtimes/win10-x64/native/liblzma.dll" />
+		<file src="lib/uwp/Win32/Release/liblzma.dll" target="runtimes/win10-x86/native/liblzma.dll" />
+		<file src="lib/uwp/arm/Release/liblzma.dll" target="runtimes/win10-arm/native/liblzma.dll" />
+	
+    </files>
+</package>

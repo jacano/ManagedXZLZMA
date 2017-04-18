@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+    <ItemGroup Condition=" '$(PlatformTarget)' == 'x86' ">
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\liblzma.dll">
+            <Link>liblzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup Condition=" '$(PlatformTarget)' == 'x64' ">
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\liblzma.dll">
+            <Link>liblzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+	
+	<PropertyGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
+        <PreferredNativeLZMA Condition=" '$(PreferredNativeLZMA)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeLZMA>
+        <PreferredNativeLZMA Condition=" '$(PreferredNativeLZMA)' == '' ">x86</PreferredNativeLZMA>
+    </PropertyGroup>
+	
+	<ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x86\native\liblzma.dll">
+            <Link>x86\liblzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-x64\native\liblzma.dll">
+            <Link>x64\liblzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)..\..\runtimes\win7-$(PreferredNativeLZMA)\native\liblzma.dll" Condition=" '$(PreferredNativeLZMA)' == 'x86' or '$(PreferredNativeLZMA)' == 'x64' ">
+            <Link>liblzma.dll</Link>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
