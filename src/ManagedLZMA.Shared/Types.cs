@@ -31,7 +31,7 @@ namespace ManagedXZ
     }
 
     [StructLayout(LayoutKind.Sequential)]
-    internal class lzma_stream
+    public struct lzma_stream
     {
         public IntPtr next_in;
         public UIntPtr avail_in;
@@ -41,17 +41,18 @@ namespace ManagedXZ
         public UIntPtr avail_out;
         public UInt64 total_out;
 
-        private IntPtr allocator;
-        private IntPtr _internal;
-        private IntPtr reserved_ptr1;
-        private IntPtr reserved_ptr2;
-        private IntPtr reserved_ptr3;
-        private IntPtr reserved_ptr4;
-        private UInt64 reserved_int1;
-        private UInt64 reserved_int2;
-        private UIntPtr reserved_int3;
-        private UIntPtr reserved_int4;
-        private uint reserved_enum1;
-        private uint reserved_enum2;
+        public IntPtr allocator;
+        public IntPtr _internal;
+
+        public IntPtr reserved_ptr1;
+        public IntPtr reserved_ptr2;
+        public IntPtr reserved_ptr3;
+        public IntPtr reserved_ptr4;
+        public UInt64 reserved_int1;
+        public UInt64 reserved_int2;
+        public UIntPtr reserved_int3;
+        public UIntPtr reserved_int4;
+        public uint reserved_enum1;
+        public uint reserved_enum2;
     }
 }
