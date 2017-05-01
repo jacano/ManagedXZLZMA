@@ -6,5 +6,3 @@ msbuild xz/project/liblzma.sln /p:Configuration="Release" /p:Platform="x64"
 msbuild xz/project/liblzma.sln /p:Configuration="Release" /p:Platform="ARM"
 
 msbuild ManagedLZMA.sln /p:Configuration="Release" /p:Platform="Any CPU"
-
-nuget pack ManagedXZLZMA.nuspec -Version 1.0.2
