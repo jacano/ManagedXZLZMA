@@ -134,57 +134,57 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>
     </LinkIncremental>
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental />
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <LinkIncremental />
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
     <LinkIncremental>
     </LinkIncremental>
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|x64'">
     <LinkIncremental />
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|ARM'">
     <LinkIncremental />
     <OutDir>$(MSBuildProjectDirectory)\..\..\lib\uwp\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(MSBuildProjectDirectory)\obj\$(Platform)\$(Configuration)\</IntDir>
+    <IntDir>$(MSBuildProjectDirectory)\uwp\obj\$(Platform)\$(Configuration)\</IntDir>
     <TargetName>liblzma</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

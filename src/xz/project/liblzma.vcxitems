@@ -157,7 +157,4 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\src\liblzma\simple\simple_private.h" />
     <ClInclude Include="config.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\src\liblzma\liblzma_w32res.rc" />
-  </ItemGroup>
 </Project>

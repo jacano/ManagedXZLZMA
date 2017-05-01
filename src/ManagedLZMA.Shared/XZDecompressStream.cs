@@ -7,12 +7,8 @@ using System.Runtime.InteropServices;
 
 namespace ManagedXZ
 {
-    public class XZDecompressStream : Stream
+    public unsafe class XZDecompressStream : Stream
     {
-        internal const UInt32 LZMA_TELL_NO_CHECK = 0x01;
-        internal const UInt32 LZMA_TELL_UNSUPPORTED_CHECK = 0x02;
-        internal const UInt32 LZMA_TELL_ANY_CHECK = 0x04;
-        internal const UInt32 LZMA_IGNORE_CHECK = 0x10;
         internal const UInt32 LZMA_CONCATENATED = 0x08;
 
         public XZDecompressStream(Stream stream)
@@ -21,11 +17,11 @@ namespace ManagedXZ
             if (!stream.CanRead) throw new ArgumentException("stream is not readable");
 
             _stream = stream;
+
             Init();
         }
 
         private Stream _stream;
-        private readonly lzma_stream _lzma_stream = new lzma_stream();
         private IntPtr _inbuf;
         private IntPtr _outbuf;
         private int read_pos;
@@ -33,20 +29,35 @@ namespace ManagedXZ
         private lzma_ret ret = lzma_ret.LZMA_OK;
         private const int BUFSIZE = 1024*512; // for decompress and read operation, a relatively large buffer is reasonable
 
+        private IntPtr next_in;
+        private IntPtr next_out;
+        private UIntPtr avail_in;
+        private UIntPtr avail_out;
+        private IntPtr allocator;
+        private IntPtr _internal;
+        private ulong total_in;
+        private ulong total_out;
+
         private void Init()
         {
-            var r = ManagedXZPInvoke.lzma_auto_decoder(_lzma_stream, ulong.MaxValue, LZMA_CONCATENATED);
-            if (r != lzma_ret.LZMA_OK)
-                throw new Exception($"Can not create lzma stream: {r}");
-
             _inbuf = Marshal.AllocHGlobal(BUFSIZE);
             _outbuf = Marshal.AllocHGlobal(BUFSIZE);
 
+            var _lzma_stream = new lzma_stream();
+
+            var r = ManagedXZPInvoke.lzma_auto_decoder(&_lzma_stream, ulong.MaxValue, LZMA_CONCATENATED);
+            if (r != lzma_ret.LZMA_OK)
+                throw new Exception($"Can not create lzma stream: {r}");
+
             // init lzma_stream
-            _lzma_stream.next_in = _inbuf;
-            _lzma_stream.next_out = _outbuf;
-            _lzma_stream.avail_in = UIntPtr.Zero;
-            _lzma_stream.avail_out = (UIntPtr)BUFSIZE;
+            next_in = _inbuf;
+            next_out = _outbuf;
+            avail_in = UIntPtr.Zero;
+            avail_out = (UIntPtr)BUFSIZE;
+            allocator = _lzma_stream.allocator;
+            _internal = _lzma_stream._internal;
+            total_in = _lzma_stream.total_in;
+            total_out = _lzma_stream.total_out;
         }
 
         public override bool CanRead => true;
@@ -74,19 +85,19 @@ namespace ManagedXZ
             while (true)
             {
                 // read from underlying stream
-                if (_lzma_stream.avail_in == UIntPtr.Zero && action == lzma_action.LZMA_RUN)
+                if (avail_in == UIntPtr.Zero && action == lzma_action.LZMA_RUN)
                 {
                     // read more data from underlying stream
                     var data = new byte[BUFSIZE];
                     var bytesRead = _stream.Read(data, 0, BUFSIZE);
                     if (bytesRead < BUFSIZE) action = lzma_action.LZMA_FINISH; // source stream has no more data
-                    _lzma_stream.next_in = _inbuf;
-                    _lzma_stream.avail_in = (UIntPtr)bytesRead;
+                    next_in = _inbuf;
+                    avail_in = (UIntPtr)bytesRead;
                     Marshal.Copy(data, 0, _inbuf, bytesRead);
                 }
 
                 // try to read from existing outbuf
-                int cReadable = BUFSIZE - (int)(uint)_lzma_stream.avail_out - read_pos;
+                int cReadable = BUFSIZE - (int)(uint)avail_out - read_pos;
                 if (cReadable > 0)
                 {
                     var cCopy = Math.Min(cReadable, count - cTotalRead);
@@ -106,17 +117,36 @@ namespace ManagedXZ
 
                 // otherwise, reset outbuf to recv more decompressed data from liblzma, or decompress is finished
                 //Trace.Assert(read_pos + (uint)_lzma_stream.avail_out <= BUFSIZE);
-                if (_lzma_stream.avail_out == UIntPtr.Zero && read_pos + (uint)_lzma_stream.avail_out == BUFSIZE)
+                if (avail_out == UIntPtr.Zero && read_pos + (uint)avail_out == BUFSIZE)
                 {
-                    _lzma_stream.next_out = _outbuf;
-                    _lzma_stream.avail_out = (UIntPtr)BUFSIZE;
+                    next_out = _outbuf;
+                    avail_out = (UIntPtr)BUFSIZE;
                     read_pos = 0;
                 }
 
+                var _lzma_stream = new lzma_stream();
+                _lzma_stream.next_in = next_in;
+                _lzma_stream.next_out = next_out;
+                _lzma_stream.avail_in = avail_in;
+                _lzma_stream.avail_out = avail_out;
+                _lzma_stream.allocator = allocator;
+                _lzma_stream._internal = _internal;
+                _lzma_stream.total_in = total_in;
+                _lzma_stream.total_out = total_out;
+
                 // do decompress
-                ret = ManagedXZPInvoke.lzma_code(_lzma_stream, action);
+                ret = ManagedXZPInvoke.lzma_code(&_lzma_stream, action);
                 if (ret != lzma_ret.LZMA_OK && ret != lzma_ret.LZMA_STREAM_END)
                     throw new Exception($"lzma_code returns {ret}");
+
+                next_in = _lzma_stream.next_in;
+                next_out = _lzma_stream.next_out;
+                avail_in = _lzma_stream.avail_in;
+                avail_out = _lzma_stream.avail_out;
+                allocator = _lzma_stream.allocator;
+                _internal = _lzma_stream._internal;
+                total_in = _lzma_stream.total_in;
+                total_out = _lzma_stream.total_out;
             }
         }
 
@@ -128,7 +158,19 @@ namespace ManagedXZ
         protected override void Dispose(bool disposing)
         {
             if (_stream == null) return;
-            ManagedXZPInvoke.lzma_end(_lzma_stream);
+
+            var _lzma_stream = new lzma_stream();
+            _lzma_stream.next_in = next_in;
+            _lzma_stream.next_out = next_out;
+            _lzma_stream.avail_in = avail_in;
+            _lzma_stream.avail_out = avail_out;
+            _lzma_stream.allocator = allocator;
+            _lzma_stream._internal = _internal;
+            _lzma_stream.total_in = total_in;
+            _lzma_stream.total_out = total_out;
+
+            ManagedXZPInvoke.lzma_end(&_lzma_stream);
+
             Marshal.FreeHGlobal(_inbuf);
             Marshal.FreeHGlobal(_outbuf);
             //_stream.Close();
