@@ -5,4 +5,5 @@ msbuild xz/project/liblzma.sln /p:Configuration="Release" /p:Platform="x86"
 msbuild xz/project/liblzma.sln /p:Configuration="Release" /p:Platform="x64"
 msbuild xz/project/liblzma.sln /p:Configuration="Release" /p:Platform="ARM"
 
+nuget restore ManagedLZMA.sln
 msbuild ManagedLZMA.sln /p:Configuration="Release" /p:Platform="Any CPU"
