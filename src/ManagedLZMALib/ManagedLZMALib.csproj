@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.2;net45</TargetFramework>
+    <TargetFrameworks>netstandard1.2;net45</TargetFrameworks>
     <AssemblyName>ManagedLZMA</AssemblyName>
     <RootNamespace>ManagedLZMA</RootNamespace>
 	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
