@@ -5,6 +5,7 @@
     <AssemblyName>ManagedLZMA</AssemblyName>
     <RootNamespace>ManagedLZMA</RootNamespace>
 	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<DebugType>embedded</DebugType>
   </PropertyGroup>
     
   <Import Project="..\ManagedLZMA.Shared\ManagedLZMA.Shared.projitems" Label="Shared" />

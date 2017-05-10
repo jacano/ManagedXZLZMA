@@ -16,9 +16,9 @@
 		<file src="lib/windows/x64/Release/liblzma.dll" target="runtimes/win7-x64/native/liblzma.dll" />
 		<file src="lib/windows/Win32/Release/liblzma.dll" target="runtimes/win7-x86/native/liblzma.dll" />
 		
-		<file src="lib/uwp/x64/Release/liblzma.dll" target="runtimes/win10-x64/native/liblzma.dll" />
-		<file src="lib/uwp/Win32/Release/liblzma.dll" target="runtimes/win10-x86/native/liblzma.dll" />
-		<file src="lib/uwp/arm/Release/liblzma.dll" target="runtimes/win10-arm/native/liblzma.dll" />
+		<file src="lib/uwp/x64/Release/liblzma.dll" target="runtimes/win10-x64/nativeassets/uap10.0/liblzma.dll" />
+		<file src="lib/uwp/Win32/Release/liblzma.dll" target="runtimes/win10-x86/nativeassets/uap10.0/liblzma.dll" />
+		<file src="lib/uwp/arm/Release/liblzma.dll" target="runtimes/win10-arm/nativeassets/uap10.0/liblzma.dll" />
 	
     </files>
 </package>
