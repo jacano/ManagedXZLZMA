@@ -1,0 +1,14 @@
+language: cpp
+
+dist: trusty
+
+os: osx
+osx_image: xcode8.3
+
+sudo: required
+
+before_install: 
+    - brew update && brew tap caskroom/cask && brew cask install xamarin-mdk && brew cask install xamarin-ios
+
+script: 
+    - cd src
