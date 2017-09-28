@@ -3,7 +3,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace ManagedXZ
+namespace ManagedXZLZMA
 {
     internal enum lzma_ret
     {

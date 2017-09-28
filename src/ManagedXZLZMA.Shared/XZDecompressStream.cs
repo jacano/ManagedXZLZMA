@@ -5,7 +5,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
 
-namespace ManagedXZ
+namespace ManagedXZLZMA
 {
     public unsafe class XZDecompressStream : Stream
     {

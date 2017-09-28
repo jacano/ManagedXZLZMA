@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedLZMALib", "ManagedLZMALib\ManagedLZMALib.csproj", "{1CE8A4D6-2E18-4925-ADF5-689F9AB823F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedXZLZMALib", "ManagedXZLZMALib\ManagedXZLZMALib.csproj", "{1CE8A4D6-2E18-4925-ADF5-689F9AB823F7}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedLZMA.Shared", "ManagedLZMA.Shared\ManagedLZMA.Shared.shproj", "{213AFD0A-15F8-43DC-B3BA-D5B61BD8D752}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedXZLZMA.Shared", "ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.shproj", "{213AFD0A-15F8-43DC-B3BA-D5B61BD8D752}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

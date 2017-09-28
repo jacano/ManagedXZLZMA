@@ -2,7 +2,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace ManagedXZ
+namespace ManagedXZLZMA
 {
     internal unsafe static class ManagedXZPInvoke
     {

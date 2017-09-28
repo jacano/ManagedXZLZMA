@@ -6,7 +6,7 @@
     <SharedGUID>213afd0a-15f8-43dc-b3ba-d5b61bd8d752</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>ManagedLZMA.Shared</Import_RootNamespace>
+    <Import_RootNamespace>ManagedXZLZMA</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)ManagedXZPInvoke.cs" />
