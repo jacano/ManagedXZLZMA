@@ -2,7 +2,7 @@
 
 pushd ..
 
-call copy_native_libs.bat nuget\build\MonoAndroid nuget\build\uap10.0 nuget\build\net45 nuget\build\XamariniOS
+call copy_native_libs.bat nuget\build\MonoAndroid nuget\build\uap10.0 nuget\build\net451 nuget\build\XamariniOS
 
 xcopy /F /R /Y /I src\ManagedXZLZMA\android\ManagedXZLZMA.targets nuget\build\MonoAndroid\*
 xcopy /F /R /Y /I src\ManagedXZLZMA\windows\ManagedXZLZMA.targets nuget\build\net451\*
