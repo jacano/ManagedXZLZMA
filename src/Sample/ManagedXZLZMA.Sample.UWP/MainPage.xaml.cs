@@ -32,11 +32,7 @@ namespace ManagedXZLZMA.Sample.UWP
 
         private void MainPage_Loaded(object sender, RoutedEventArgs e)
         {
-            FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
-            {
-                //var dxt1Texture = CrunchHelper.CrnDecompress(b);
-                // 196608
-            });
+            TestHelper.TestMethod();
         }
     }
 }

@@ -4,7 +4,7 @@ xcopy /F /R /Y /I output\android\x86\libxzlzma.so %1%\x86\*
 xcopy /F /R /Y /I output\android\x64\libxzlzma.so %1%\x86_64\*
 xcopy /F /R /Y /I output\android\ARM\libxzlzma.so %1%\armeabi\*
 xcopy /F /R /Y /I output\android\ARM\libxzlzma.so %1%\armeabi-v7a\*
-xcopy /F /R /Y /I output\android\ARM64\libCrunch.so %1%\arm64-v8a\*
+xcopy /F /R /Y /I output\android\ARM64\libxzlzma.so %1%\arm64-v8a\*
 
 xcopy /F /R /Y /I output\uwp\Win32\libxzlzmaUniversal\libxzlzma.dll %2%\x86\*
 xcopy /F /R /Y /I output\uwp\x64\libxzlzmaUniversal\libxzlzma.dll %2%\x64\*

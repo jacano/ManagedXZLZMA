@@ -6,11 +6,7 @@ namespace ManagedXZLZMA.Test
     {
         public static void Main()
         {
-            FileHelper.ProcessEmbeddedFile("kodim15.crn", (b) =>
-            {
-                //var dxt1Texture = CrunchHelper.CrnDecompress(b);
-                // 196608
-            });
+            TestHelper.TestMethod();
         }
     }
 }

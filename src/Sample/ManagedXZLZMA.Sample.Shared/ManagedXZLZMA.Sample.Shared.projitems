@@ -10,5 +10,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)FileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)data.lzma">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LogicalName>data.lzma</LogicalName>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
