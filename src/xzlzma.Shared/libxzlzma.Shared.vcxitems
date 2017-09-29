@@ -57,7 +57,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_buffer_encoder.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_decoder.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_encoder.c" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_encoder_mt.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_flags_common.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_flags_decoder.c" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\common\stream_flags_encoder.c" />
@@ -90,7 +89,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\xz\liblzma\simple\x86.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\mythread.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\sysdefs.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\tuklib_common.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\tuklib_config.h" />
