@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.2</TargetFramework>
-    <AssemblyName>ManagedXZLZMA</AssemblyName>
-    <RootNamespace>ManagedXZLZMA</RootNamespace>
 	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	<DebugType>full</DebugType>
   </PropertyGroup>
+  
+    <ItemGroup>
+		<PackageReference Include="GitInfo" Version="2.0.1" />
+    </ItemGroup>
     
   <Import Project="..\ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.projitems" Label="Shared" />
     

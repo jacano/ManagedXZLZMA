@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+	<!-- get the preferred architecture -->
+    <PropertyGroup>
+        <!-- handle VS 2017 live unit testing -->
+        <PreferredNativeXZLZMA Condition=" '$(PreferredNativeXZLZMA)' == '' and '$(BuildingForLiveUnitTesting)' == 'true' and '$(PlatformTarget)' == '' ">x86</PreferredNativeXZLZMA>   
+        <!-- handle x86/x64 specifically -->
+        <PreferredNativeXZLZMA Condition=" '$(PreferredNativeXZLZMA)' == '' and ( '$(PlatformTarget)' == 'x64' or '$(PlatformTarget)' == 'x86' ) ">$(PlatformTarget)</PreferredNativeXZLZMA> 
+        <!-- handle Any CPU, considering Prefer32Bit -->
+        <PreferredNativeXZLZMA Condition=" '$(PreferredNativeXZLZMA)' == '' and '$(Prefer32Bit)' == 'False' ">x64</PreferredNativeXZLZMA>  
+        <PreferredNativeXZLZMA Condition=" '$(PreferredNativeXZLZMA)' == '' and '$(Prefer32Bit)' == 'True' ">x86</PreferredNativeXZLZMA> 
+        <!-- fall back to x64 on 64-bit machines -->
+        <PreferredNativeXZLZMA Condition=" '$(PreferredNativeXZLZMA)' == '' and $([System.Environment]::Is64BitOperatingSystem) ">x64</PreferredNativeXZLZMA> 
+        <!-- fall back to x86 -->
+        <PreferredNativeXZLZMA Condition=" '$(PreferredNativeXZLZMA)' == '' ">x86</PreferredNativeXZLZMA>
+    </PropertyGroup>
+	
+	<!-- get the preferred paths -->
+    <PropertyGroup>
+        <PreferredNativeXZLZMAPath>$(MSBuildThisFileDirectory)$(PreferredNativeXZLZMA)\libxzlzma.dll</PreferredNativeXZLZMAPath> 
+    </PropertyGroup>
+	
+	<ItemGroup>
+        <None Include="$(PreferredNativeXZLZMAPath)">
+			      <Link>libxzlzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+	
+	
+	<!-- a special case for Any CPU -->
+    <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
+        <None Include="$(MSBuildThisFileDirectory)x86\libxzlzma.dll">
+			      <Link>x86\libxzlzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="$(MSBuildThisFileDirectory)x64\libxzlzma.dll">
+			      <Link>x64\libxzlzma.dll</Link>
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+	</ItemGroup>
+	
+
+</Project>
