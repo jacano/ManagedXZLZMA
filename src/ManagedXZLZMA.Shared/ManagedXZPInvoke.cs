@@ -9,7 +9,7 @@ namespace ManagedXZLZMA
 #if __IOS__
         private const string DllName = "__Internal";
 #else
-        private const string DllName = "liblzma";
+        private const string DllName = "libxzlzma";
 #endif
         private const CallingConvention DefaultCallingConvention = CallingConvention.Cdecl;
 

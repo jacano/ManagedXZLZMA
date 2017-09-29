@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedXZLZMALib", "ManagedXZLZMALib\ManagedXZLZMALib.csproj", "{1CE8A4D6-2E18-4925-ADF5-689F9AB823F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedXZLZMA", "ManagedXZLZMA\ManagedXZLZMA.csproj", "{1CE8A4D6-2E18-4925-ADF5-689F9AB823F7}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedXZLZMA.Shared", "ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.shproj", "{213AFD0A-15F8-43DC-B3BA-D5B61BD8D752}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ManagedLZMA.Shared\ManagedLZMA.Shared.projitems*{213afd0a-15f8-43dc-b3ba-d5b61bd8d752}*SharedItemsImports = 13
+		ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.projitems*{213afd0a-15f8-43dc-b3ba-d5b61bd8d752}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +23,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF1C9F83-C799-4AA5-998F-FA4300EFE6C1}
 	EndGlobalSection
 EndGlobal

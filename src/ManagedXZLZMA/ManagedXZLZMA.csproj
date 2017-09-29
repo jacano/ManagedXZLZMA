@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <AssemblyName>ManagedXZLZMA</AssemblyName>
+    <RootNamespace>ManagedXZLZMA</RootNamespace>
+	<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+    
+  <Import Project="..\ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.projitems" Label="Shared" />
+    
+</Project>
