@@ -3,9 +3,9 @@ if [ -z "$DROPBOX_KEY" ]
 	DROPBOX_KEY=$(<secrets/dropboxkey.txt)
 fi
 
-pushd src/crunch.iOS
+pushd src/xzlzma.iOS
 
-ARTIFACT_NAME="libcrunch.a"
+ARTIFACT_NAME="libxzlzma.a"
 ARTIFACT_PATH="build/$ARTIFACT_NAME"
 AUTHORIZATION_TOKEN="Authorization: Bearer $DROPBOX_KEY"
 CONTENT_TYPE="Content-Type: application/octet-stream"

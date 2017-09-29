@@ -6,7 +6,7 @@ set ARTIFACT_FOLDER=output\ios\
 rmdir /s /q %ARTIFACT_FOLDER%
 mkdir %ARTIFACT_FOLDER%
 
-set ARTIFACT_NAME=libcrunch.a
+set ARTIFACT_NAME=libxzlzma.a
 set AUTHORIZATION_TOKEN="Authorization: Bearer %DROPBOX_KEY%"
 set DROPBOX_ARGS="Dropbox-API-Arg: {\"path\":\"/%ARTIFACT_NAME%\"}"
 set DROPBOX_URL="https://content.dropboxapi.com/2/files/download"
