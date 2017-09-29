@@ -29,8 +29,8 @@ call copy_native_libs.bat src\ManagedXZLZMA\android src\ManagedXZLZMA\uwp src\Ma
 
 pushd src
 
-nuget restore ManagedCrunch.sln
-msbuild ManagedCrunch/ManagedCrunch.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutDir="../../output/ManagedCrunch/"
-msbuild ManagedCrunch.iOS/ManagedCrunch.iOS.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutDir="../../output/ManagedCrunch.iOS/"
+nuget restore ManagedXZLZMA.sln
+msbuild ManagedXZLZMA/ManagedXZLZMA.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutDir="../../output/ManagedXZLZMA/"
+REM msbuild ManagedXZLZMA.iOS/ManagedXZLZMA.iOS.csproj /p:Configuration="Release" /p:Platform="AnyCPU" /p:OutDir="../../output/ManagedXZLZMA.iOS/"
 
 popd
