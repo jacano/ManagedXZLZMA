@@ -97,6 +97,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\tuklib_cpucores.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\tuklib_integer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\common\tuklib_physmem.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\config.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\liblzma\api\lzma.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\liblzma\api\lzma\base.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\liblzma\api\lzma\bcj.h" />
@@ -156,6 +157,5 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\liblzma\simple\simple_decoder.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\liblzma\simple\simple_encoder.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\xz\liblzma\simple\simple_private.h" />
-    <ClInclude Include="config.h" />
   </ItemGroup>
 </Project>
