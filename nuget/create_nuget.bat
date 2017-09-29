@@ -1,5 +1,8 @@
 @echo off
 
+del /s /f /q lib
+del /s /f /q build
+
 pushd ..
 
 call copy_native_libs.bat nuget\build\MonoAndroid nuget\build\uap10.0 nuget\build\net451 nuget\build\XamariniOS
@@ -7,7 +10,6 @@ call copy_native_libs.bat nuget\build\MonoAndroid nuget\build\uap10.0 nuget\buil
 xcopy /F /R /Y /I src\ManagedXZLZMA\android\ManagedXZLZMA.targets nuget\build\MonoAndroid\*
 xcopy /F /R /Y /I src\ManagedXZLZMA\windows\ManagedXZLZMA.targets nuget\build\net451\*
 xcopy /F /R /Y /I src\ManagedXZLZMA\uwp\ManagedXZLZMA.targets nuget\build\uap10.0\*
-
 
 xcopy /F /R /Y /I output\ManagedXZLZMA\ManagedXZLZMA.dll nuget\lib\netstandard1.2\*
 
