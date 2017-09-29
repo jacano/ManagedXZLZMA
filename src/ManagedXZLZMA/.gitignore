@@ -1,0 +1,8 @@
+android/
+!android/ManagedXZLZMA.targets
+
+uwp/
+!uwp/ManagedXZLZMA.targets
+
+windows/
+!windows/ManagedXZLZMA.targets
