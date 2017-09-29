@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+	  <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+	  <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <Import Project="..\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ManagedXZLZMA\ManagedXZLZMA.csproj" />
+  </ItemGroup>
+  
+  <Import Project="..\..\ManagedXZLZMA\windows\ManagedXZLZMA.targets" />
+  
+</Project>
