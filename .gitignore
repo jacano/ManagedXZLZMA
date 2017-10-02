@@ -9,6 +9,7 @@ artifacts/
 output/
 AppPackages/
 BundleArtifacts/
+xcuserdata/
 secrets/
 
 *.suo
@@ -23,4 +24,7 @@ generate.info
 WaveContent.cs
 UpgradeLog*.htm
 *.payload.desc
+*.xcuserstate
+*.DS_Store
+*.userprefs
 
