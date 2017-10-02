@@ -13,5 +13,5 @@ xcopy /F /R /Y /I output\uwp\ARM\libxzlzmaUniversal\libxzlzma.dll %2%\arm\*
 xcopy /F /R /Y /I output\windows\Win32\libxzlzma.dll %3%\x86\*
 xcopy /F /R /Y /I output\windows\x64\libxzlzma.dll %3%\x64\*
 
-REM call grab_ios_build.bat
-REM xcopy /F /R /Y /I output\ios\fat\libxzlzma.a %4%\fat\*
+call grab_ios_build.bat
+xcopy /F /R /Y /I output\ios\fat\libxzlzma.a %4%\fat\*
