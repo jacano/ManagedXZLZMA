@@ -9,6 +9,7 @@ artifacts/
 output/
 AppPackages/
 BundleArtifacts/
+xzlzma.build/
 xcuserdata/
 secrets/
 
@@ -19,12 +20,15 @@ secrets/
 *.VC.db
 *.VC.opendb
 *.nvuser
+*.bak
 *.nuget.props
-generate.info
-WaveContent.cs
-UpgradeLog*.htm
 *.payload.desc
 *.xcuserstate
 *.DS_Store
 *.userprefs
+
+generate.info
+WaveContent.cs
+UpgradeLog*.htm
+contents.xcworkspacedata
 
