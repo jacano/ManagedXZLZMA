@@ -7,7 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE2ADA831ECE1B0900D68A3D /* crn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE2ADA811ECE1B0900D68A3D /* crn.cpp */; };
+		CE7EE2661F8255E900EFAA94 /* tuklib_cpucores.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2601F8255E800EFAA94 /* tuklib_cpucores.c */; };
+		CE7EE2671F8255E900EFAA94 /* tuklib_physmem.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2651F8255E900EFAA94 /* tuklib_physmem.c */; };
+		CE7EE2841F82561000EFAA94 /* crc64_table.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2791F82560E00EFAA94 /* crc64_table.c */; };
+		CE7EE2851F82561000EFAA94 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE27B1F82560E00EFAA94 /* sha256.c */; };
+		CE7EE2861F82561000EFAA94 /* crc64_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE27C1F82560F00EFAA94 /* crc64_fast.c */; };
+		CE7EE2871F82561000EFAA94 /* crc32_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE27E1F82560F00EFAA94 /* crc32_fast.c */; };
+		CE7EE2881F82561000EFAA94 /* crc32_table.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE27F1F82560F00EFAA94 /* crc32_table.c */; };
+		CE7EE2891F82561000EFAA94 /* check.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2801F82560F00EFAA94 /* check.c */; };
+		CE7EE2C21F82562400EFAA94 /* easy_encoder_memusage.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE28A1F82561D00EFAA94 /* easy_encoder_memusage.c */; };
+		CE7EE2C31F82562400EFAA94 /* stream_buffer_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE28B1F82561D00EFAA94 /* stream_buffer_encoder.c */; };
+		CE7EE2C41F82562400EFAA94 /* stream_flags_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE28D1F82561D00EFAA94 /* stream_flags_decoder.c */; };
+		CE7EE2C51F82562400EFAA94 /* block_header_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE28E1F82561E00EFAA94 /* block_header_decoder.c */; };
+		CE7EE2C61F82562400EFAA94 /* easy_preset.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE28F1F82561E00EFAA94 /* easy_preset.c */; };
+		CE7EE2C71F82562400EFAA94 /* auto_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2901F82561E00EFAA94 /* auto_decoder.c */; };
+		CE7EE2C81F82562400EFAA94 /* vli_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2921F82561E00EFAA94 /* vli_encoder.c */; };
+		CE7EE2C91F82562400EFAA94 /* block_header_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2931F82561E00EFAA94 /* block_header_encoder.c */; };
+		CE7EE2CA1F82562400EFAA94 /* stream_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2941F82561E00EFAA94 /* stream_encoder.c */; };
+		CE7EE2CB1F82562400EFAA94 /* stream_flags_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2951F82561F00EFAA94 /* stream_flags_encoder.c */; };
+		CE7EE2CC1F82562400EFAA94 /* vli_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2961F82561F00EFAA94 /* vli_decoder.c */; };
+		CE7EE2CD1F82562400EFAA94 /* hardware_cputhreads.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2971F82561F00EFAA94 /* hardware_cputhreads.c */; };
+		CE7EE2CE1F82562400EFAA94 /* stream_flags_common.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2991F82561F00EFAA94 /* stream_flags_common.c */; };
+		CE7EE2CF1F82562400EFAA94 /* stream_buffer_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE29A1F82561F00EFAA94 /* stream_buffer_decoder.c */; };
+		CE7EE2D01F82562400EFAA94 /* alone_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE29C1F82561F00EFAA94 /* alone_encoder.c */; };
+		CE7EE2D11F82562400EFAA94 /* stream_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE29D1F82561F00EFAA94 /* stream_decoder.c */; };
+		CE7EE2D21F82562400EFAA94 /* index_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE29E1F82562000EFAA94 /* index_encoder.c */; };
+		CE7EE2D31F82562400EFAA94 /* filter_buffer_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE29F1F82562000EFAA94 /* filter_buffer_encoder.c */; };
+		CE7EE2D41F82562400EFAA94 /* filter_common.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A01F82562000EFAA94 /* filter_common.c */; };
+		CE7EE2D51F82562400EFAA94 /* filter_flags_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A21F82562000EFAA94 /* filter_flags_encoder.c */; };
+		CE7EE2D61F82562400EFAA94 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A31F82562000EFAA94 /* index.c */; };
+		CE7EE2D71F82562400EFAA94 /* easy_decoder_memusage.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A41F82562000EFAA94 /* easy_decoder_memusage.c */; };
+		CE7EE2D81F82562400EFAA94 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A51F82562000EFAA94 /* common.c */; };
+		CE7EE2D91F82562400EFAA94 /* block_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A71F82562100EFAA94 /* block_encoder.c */; };
+		CE7EE2DA1F82562400EFAA94 /* filter_buffer_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2A81F82562100EFAA94 /* filter_buffer_decoder.c */; };
+		CE7EE2DB1F82562400EFAA94 /* block_util.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2AA1F82562100EFAA94 /* block_util.c */; };
+		CE7EE2DC1F82562400EFAA94 /* block_buffer_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2AB1F82562100EFAA94 /* block_buffer_encoder.c */; };
+		CE7EE2DE1F82562400EFAA94 /* filter_flags_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2AF1F82562100EFAA94 /* filter_flags_decoder.c */; };
+		CE7EE2DF1F82562400EFAA94 /* index_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B01F82562200EFAA94 /* index_decoder.c */; };
+		CE7EE2E01F82562400EFAA94 /* vli_size.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B11F82562200EFAA94 /* vli_size.c */; };
+		CE7EE2E11F82562400EFAA94 /* block_buffer_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B21F82562200EFAA94 /* block_buffer_decoder.c */; };
+		CE7EE2E21F82562400EFAA94 /* alone_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B31F82562200EFAA94 /* alone_decoder.c */; };
+		CE7EE2E31F82562400EFAA94 /* index_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B71F82562200EFAA94 /* index_hash.c */; };
+		CE7EE2E41F82562400EFAA94 /* hardware_physmem.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B81F82562200EFAA94 /* hardware_physmem.c */; };
+		CE7EE2E51F82562400EFAA94 /* easy_buffer_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2B91F82562300EFAA94 /* easy_buffer_encoder.c */; };
+		CE7EE2E61F82562400EFAA94 /* block_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2BA1F82562300EFAA94 /* block_decoder.c */; };
+		CE7EE2E71F82562400EFAA94 /* easy_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2BC1F82562300EFAA94 /* easy_encoder.c */; };
+		CE7EE2E81F82562400EFAA94 /* filter_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2BD1F82562300EFAA94 /* filter_decoder.c */; };
+		CE7EE2E91F82562400EFAA94 /* outqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2C01F82562300EFAA94 /* outqueue.c */; };
+		CE7EE2EA1F82562400EFAA94 /* filter_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2C11F82562400EFAA94 /* filter_encoder.c */; };
+		CE7EE2F21F82563000EFAA94 /* delta_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2EC1F82562F00EFAA94 /* delta_decoder.c */; };
+		CE7EE2F31F82563000EFAA94 /* delta_common.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2ED1F82562F00EFAA94 /* delta_common.c */; };
+		CE7EE2F41F82563000EFAA94 /* delta_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2F01F82563000EFAA94 /* delta_encoder.c */; };
+		CE7EE2FC1F82563C00EFAA94 /* lz_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2F51F82563B00EFAA94 /* lz_encoder.c */; };
+		CE7EE2FD1F82563C00EFAA94 /* lz_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2F81F82563B00EFAA94 /* lz_decoder.c */; };
+		CE7EE2FE1F82563C00EFAA94 /* lz_encoder_mf.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE2FA1F82563B00EFAA94 /* lz_encoder_mf.c */; };
+		CE7EE30F1F82564800EFAA94 /* lzma_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3001F82564600EFAA94 /* lzma_decoder.c */; };
+		CE7EE3101F82564800EFAA94 /* lzma2_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3011F82564600EFAA94 /* lzma2_decoder.c */; };
+		CE7EE3111F82564800EFAA94 /* lzma_encoder_optimum_normal.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3021F82564600EFAA94 /* lzma_encoder_optimum_normal.c */; };
+		CE7EE3121F82564800EFAA94 /* lzma2_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3041F82564700EFAA94 /* lzma2_encoder.c */; };
+		CE7EE3131F82564800EFAA94 /* lzma_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3061F82564700EFAA94 /* lzma_encoder.c */; };
+		CE7EE3141F82564800EFAA94 /* fastpos_table.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3081F82564700EFAA94 /* fastpos_table.c */; };
+		CE7EE3151F82564800EFAA94 /* fastpos_tablegen.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE30A1F82564700EFAA94 /* fastpos_tablegen.c */; };
+		CE7EE3161F82564800EFAA94 /* lzma_encoder_presets.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE30B1F82564800EFAA94 /* lzma_encoder_presets.c */; };
+		CE7EE3171F82564800EFAA94 /* lzma_encoder_optimum_fast.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE30C1F82564800EFAA94 /* lzma_encoder_optimum_fast.c */; };
+		CE7EE31D1F82565300EFAA94 /* price_table.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3181F82565200EFAA94 /* price_table.c */; };
+		CE7EE32B1F82565E00EFAA94 /* arm.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE31E1F82565C00EFAA94 /* arm.c */; };
+		CE7EE32C1F82565E00EFAA94 /* armthumb.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE31F1F82565C00EFAA94 /* armthumb.c */; };
+		CE7EE32D1F82565E00EFAA94 /* simple_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3201F82565D00EFAA94 /* simple_decoder.c */; };
+		CE7EE32E1F82565E00EFAA94 /* sparc.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3211F82565D00EFAA94 /* sparc.c */; };
+		CE7EE32F1F82565E00EFAA94 /* simple_coder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3231F82565D00EFAA94 /* simple_coder.c */; };
+		CE7EE3301F82565E00EFAA94 /* x86.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3241F82565D00EFAA94 /* x86.c */; };
+		CE7EE3311F82565E00EFAA94 /* ia64.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3281F82565E00EFAA94 /* ia64.c */; };
+		CE7EE3321F82565E00EFAA94 /* simple_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE3291F82565E00EFAA94 /* simple_encoder.c */; };
+		CE7EE3331F82565E00EFAA94 /* powerpc.c in Sources */ = {isa = PBXBuildFile; fileRef = CE7EE32A1F82565E00EFAA94 /* powerpc.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,9 +95,145 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CE2ADA801ECE1B0900D68A3D /* crn_decomp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crn_decomp.h; path = ../xzlzma/crn_decomp.h; sourceTree = SOURCE_ROOT; };
-		CE2ADA811ECE1B0900D68A3D /* crn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = crn.cpp; path = ../xzlzma/crn.cpp; sourceTree = SOURCE_ROOT; };
-		CE2ADA821ECE1B0900D68A3D /* crnlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crnlib.h; path = ../xzlzma/crnlib.h; sourceTree = SOURCE_ROOT; };
+		CE0945211F82502C00CC46E4 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = ../../xz/config.h; sourceTree = "<group>"; };
+		CE7EE25E1F8255E800EFAA94 /* tuklib_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tuklib_config.h; path = ../../xz/common/tuklib_config.h; sourceTree = "<group>"; };
+		CE7EE25F1F8255E800EFAA94 /* tuklib_integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tuklib_integer.h; path = ../../xz/common/tuklib_integer.h; sourceTree = "<group>"; };
+		CE7EE2601F8255E800EFAA94 /* tuklib_cpucores.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tuklib_cpucores.c; path = ../../xz/common/tuklib_cpucores.c; sourceTree = "<group>"; };
+		CE7EE2611F8255E800EFAA94 /* sysdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sysdefs.h; path = ../../xz/common/sysdefs.h; sourceTree = "<group>"; };
+		CE7EE2621F8255E800EFAA94 /* tuklib_cpucores.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tuklib_cpucores.h; path = ../../xz/common/tuklib_cpucores.h; sourceTree = "<group>"; };
+		CE7EE2631F8255E800EFAA94 /* tuklib_physmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tuklib_physmem.h; path = ../../xz/common/tuklib_physmem.h; sourceTree = "<group>"; };
+		CE7EE2641F8255E900EFAA94 /* tuklib_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tuklib_common.h; path = ../../xz/common/tuklib_common.h; sourceTree = "<group>"; };
+		CE7EE2651F8255E900EFAA94 /* tuklib_physmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tuklib_physmem.c; path = ../../xz/common/tuklib_physmem.c; sourceTree = "<group>"; };
+		CE7EE2681F8255F400EFAA94 /* lzma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma.h; path = ../../xz/liblzma/api/lzma.h; sourceTree = "<group>"; };
+		CE7EE2691F8255FC00EFAA94 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = index.h; path = ../../xz/liblzma/api/lzma/index.h; sourceTree = "<group>"; };
+		CE7EE26A1F8255FC00EFAA94 /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter.h; path = ../../xz/liblzma/api/lzma/filter.h; sourceTree = "<group>"; };
+		CE7EE26B1F8255FC00EFAA94 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base.h; path = ../../xz/liblzma/api/lzma/base.h; sourceTree = "<group>"; };
+		CE7EE26C1F8255FC00EFAA94 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = ../../xz/liblzma/api/lzma/version.h; sourceTree = "<group>"; };
+		CE7EE26D1F8255FC00EFAA94 /* delta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delta.h; path = ../../xz/liblzma/api/lzma/delta.h; sourceTree = "<group>"; };
+		CE7EE26E1F8255FC00EFAA94 /* bcj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bcj.h; path = ../../xz/liblzma/api/lzma/bcj.h; sourceTree = "<group>"; };
+		CE7EE26F1F8255FC00EFAA94 /* index_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = index_hash.h; path = ../../xz/liblzma/api/lzma/index_hash.h; sourceTree = "<group>"; };
+		CE7EE2701F8255FC00EFAA94 /* hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hardware.h; path = ../../xz/liblzma/api/lzma/hardware.h; sourceTree = "<group>"; };
+		CE7EE2711F8255FC00EFAA94 /* vli.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vli.h; path = ../../xz/liblzma/api/lzma/vli.h; sourceTree = "<group>"; };
+		CE7EE2721F8255FC00EFAA94 /* check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = check.h; path = ../../xz/liblzma/api/lzma/check.h; sourceTree = "<group>"; };
+		CE7EE2731F8255FC00EFAA94 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block.h; path = ../../xz/liblzma/api/lzma/block.h; sourceTree = "<group>"; };
+		CE7EE2741F8255FC00EFAA94 /* lzma12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma12.h; path = ../../xz/liblzma/api/lzma/lzma12.h; sourceTree = "<group>"; };
+		CE7EE2751F8255FD00EFAA94 /* stream_flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_flags.h; path = ../../xz/liblzma/api/lzma/stream_flags.h; sourceTree = "<group>"; };
+		CE7EE2761F8255FD00EFAA94 /* container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = container.h; path = ../../xz/liblzma/api/lzma/container.h; sourceTree = "<group>"; };
+		CE7EE2781F82560E00EFAA94 /* crc64_table_be.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc64_table_be.h; path = ../../xz/liblzma/check/crc64_table_be.h; sourceTree = "<group>"; };
+		CE7EE2791F82560E00EFAA94 /* crc64_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc64_table.c; path = ../../xz/liblzma/check/crc64_table.c; sourceTree = "<group>"; };
+		CE7EE27A1F82560E00EFAA94 /* crc_macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc_macros.h; path = ../../xz/liblzma/check/crc_macros.h; sourceTree = "<group>"; };
+		CE7EE27B1F82560E00EFAA94 /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha256.c; path = ../../xz/liblzma/check/sha256.c; sourceTree = "<group>"; };
+		CE7EE27C1F82560F00EFAA94 /* crc64_fast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc64_fast.c; path = ../../xz/liblzma/check/crc64_fast.c; sourceTree = "<group>"; };
+		CE7EE27D1F82560F00EFAA94 /* crc32_table_le.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc32_table_le.h; path = ../../xz/liblzma/check/crc32_table_le.h; sourceTree = "<group>"; };
+		CE7EE27E1F82560F00EFAA94 /* crc32_fast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc32_fast.c; path = ../../xz/liblzma/check/crc32_fast.c; sourceTree = "<group>"; };
+		CE7EE27F1F82560F00EFAA94 /* crc32_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc32_table.c; path = ../../xz/liblzma/check/crc32_table.c; sourceTree = "<group>"; };
+		CE7EE2801F82560F00EFAA94 /* check.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = check.c; path = ../../xz/liblzma/check/check.c; sourceTree = "<group>"; };
+		CE7EE2811F82560F00EFAA94 /* check.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = check.h; path = ../../xz/liblzma/check/check.h; sourceTree = "<group>"; };
+		CE7EE2821F82560F00EFAA94 /* crc64_table_le.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc64_table_le.h; path = ../../xz/liblzma/check/crc64_table_le.h; sourceTree = "<group>"; };
+		CE7EE2831F82561000EFAA94 /* crc32_table_be.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc32_table_be.h; path = ../../xz/liblzma/check/crc32_table_be.h; sourceTree = "<group>"; };
+		CE7EE28A1F82561D00EFAA94 /* easy_encoder_memusage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = easy_encoder_memusage.c; path = ../../xz/liblzma/common/easy_encoder_memusage.c; sourceTree = "<group>"; };
+		CE7EE28B1F82561D00EFAA94 /* stream_buffer_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_buffer_encoder.c; path = ../../xz/liblzma/common/stream_buffer_encoder.c; sourceTree = "<group>"; };
+		CE7EE28C1F82561D00EFAA94 /* outqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = outqueue.h; path = ../../xz/liblzma/common/outqueue.h; sourceTree = "<group>"; };
+		CE7EE28D1F82561D00EFAA94 /* stream_flags_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_flags_decoder.c; path = ../../xz/liblzma/common/stream_flags_decoder.c; sourceTree = "<group>"; };
+		CE7EE28E1F82561E00EFAA94 /* block_header_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_header_decoder.c; path = ../../xz/liblzma/common/block_header_decoder.c; sourceTree = "<group>"; };
+		CE7EE28F1F82561E00EFAA94 /* easy_preset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = easy_preset.c; path = ../../xz/liblzma/common/easy_preset.c; sourceTree = "<group>"; };
+		CE7EE2901F82561E00EFAA94 /* auto_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = auto_decoder.c; path = ../../xz/liblzma/common/auto_decoder.c; sourceTree = "<group>"; };
+		CE7EE2911F82561E00EFAA94 /* stream_flags_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_flags_common.h; path = ../../xz/liblzma/common/stream_flags_common.h; sourceTree = "<group>"; };
+		CE7EE2921F82561E00EFAA94 /* vli_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vli_encoder.c; path = ../../xz/liblzma/common/vli_encoder.c; sourceTree = "<group>"; };
+		CE7EE2931F82561E00EFAA94 /* block_header_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_header_encoder.c; path = ../../xz/liblzma/common/block_header_encoder.c; sourceTree = "<group>"; };
+		CE7EE2941F82561E00EFAA94 /* stream_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_encoder.c; path = ../../xz/liblzma/common/stream_encoder.c; sourceTree = "<group>"; };
+		CE7EE2951F82561F00EFAA94 /* stream_flags_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_flags_encoder.c; path = ../../xz/liblzma/common/stream_flags_encoder.c; sourceTree = "<group>"; };
+		CE7EE2961F82561F00EFAA94 /* vli_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vli_decoder.c; path = ../../xz/liblzma/common/vli_decoder.c; sourceTree = "<group>"; };
+		CE7EE2971F82561F00EFAA94 /* hardware_cputhreads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hardware_cputhreads.c; path = ../../xz/liblzma/common/hardware_cputhreads.c; sourceTree = "<group>"; };
+		CE7EE2981F82561F00EFAA94 /* index_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = index_encoder.h; path = ../../xz/liblzma/common/index_encoder.h; sourceTree = "<group>"; };
+		CE7EE2991F82561F00EFAA94 /* stream_flags_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_flags_common.c; path = ../../xz/liblzma/common/stream_flags_common.c; sourceTree = "<group>"; };
+		CE7EE29A1F82561F00EFAA94 /* stream_buffer_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_buffer_decoder.c; path = ../../xz/liblzma/common/stream_buffer_decoder.c; sourceTree = "<group>"; };
+		CE7EE29B1F82561F00EFAA94 /* alone_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alone_decoder.h; path = ../../xz/liblzma/common/alone_decoder.h; sourceTree = "<group>"; };
+		CE7EE29C1F82561F00EFAA94 /* alone_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = alone_encoder.c; path = ../../xz/liblzma/common/alone_encoder.c; sourceTree = "<group>"; };
+		CE7EE29D1F82561F00EFAA94 /* stream_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stream_decoder.c; path = ../../xz/liblzma/common/stream_decoder.c; sourceTree = "<group>"; };
+		CE7EE29E1F82562000EFAA94 /* index_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = index_encoder.c; path = ../../xz/liblzma/common/index_encoder.c; sourceTree = "<group>"; };
+		CE7EE29F1F82562000EFAA94 /* filter_buffer_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_buffer_encoder.c; path = ../../xz/liblzma/common/filter_buffer_encoder.c; sourceTree = "<group>"; };
+		CE7EE2A01F82562000EFAA94 /* filter_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_common.c; path = ../../xz/liblzma/common/filter_common.c; sourceTree = "<group>"; };
+		CE7EE2A11F82562000EFAA94 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../../xz/liblzma/common/common.h; sourceTree = "<group>"; };
+		CE7EE2A21F82562000EFAA94 /* filter_flags_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_flags_encoder.c; path = ../../xz/liblzma/common/filter_flags_encoder.c; sourceTree = "<group>"; };
+		CE7EE2A31F82562000EFAA94 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = index.c; path = ../../xz/liblzma/common/index.c; sourceTree = "<group>"; };
+		CE7EE2A41F82562000EFAA94 /* easy_decoder_memusage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = easy_decoder_memusage.c; path = ../../xz/liblzma/common/easy_decoder_memusage.c; sourceTree = "<group>"; };
+		CE7EE2A51F82562000EFAA94 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = common.c; path = ../../xz/liblzma/common/common.c; sourceTree = "<group>"; };
+		CE7EE2A61F82562000EFAA94 /* easy_preset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = easy_preset.h; path = ../../xz/liblzma/common/easy_preset.h; sourceTree = "<group>"; };
+		CE7EE2A71F82562100EFAA94 /* block_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_encoder.c; path = ../../xz/liblzma/common/block_encoder.c; sourceTree = "<group>"; };
+		CE7EE2A81F82562100EFAA94 /* filter_buffer_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_buffer_decoder.c; path = ../../xz/liblzma/common/filter_buffer_decoder.c; sourceTree = "<group>"; };
+		CE7EE2A91F82562100EFAA94 /* stream_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream_decoder.h; path = ../../xz/liblzma/common/stream_decoder.h; sourceTree = "<group>"; };
+		CE7EE2AA1F82562100EFAA94 /* block_util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_util.c; path = ../../xz/liblzma/common/block_util.c; sourceTree = "<group>"; };
+		CE7EE2AB1F82562100EFAA94 /* block_buffer_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_buffer_encoder.c; path = ../../xz/liblzma/common/block_buffer_encoder.c; sourceTree = "<group>"; };
+		CE7EE2AC1F82562100EFAA94 /* block_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_decoder.h; path = ../../xz/liblzma/common/block_decoder.h; sourceTree = "<group>"; };
+		CE7EE2AE1F82562100EFAA94 /* filter_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter_common.h; path = ../../xz/liblzma/common/filter_common.h; sourceTree = "<group>"; };
+		CE7EE2AF1F82562100EFAA94 /* filter_flags_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_flags_decoder.c; path = ../../xz/liblzma/common/filter_flags_decoder.c; sourceTree = "<group>"; };
+		CE7EE2B01F82562200EFAA94 /* index_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = index_decoder.c; path = ../../xz/liblzma/common/index_decoder.c; sourceTree = "<group>"; };
+		CE7EE2B11F82562200EFAA94 /* vli_size.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vli_size.c; path = ../../xz/liblzma/common/vli_size.c; sourceTree = "<group>"; };
+		CE7EE2B21F82562200EFAA94 /* block_buffer_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_buffer_decoder.c; path = ../../xz/liblzma/common/block_buffer_decoder.c; sourceTree = "<group>"; };
+		CE7EE2B31F82562200EFAA94 /* alone_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = alone_decoder.c; path = ../../xz/liblzma/common/alone_decoder.c; sourceTree = "<group>"; };
+		CE7EE2B41F82562200EFAA94 /* filter_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter_decoder.h; path = ../../xz/liblzma/common/filter_decoder.h; sourceTree = "<group>"; };
+		CE7EE2B51F82562200EFAA94 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = index.h; path = ../../xz/liblzma/common/index.h; sourceTree = "<group>"; };
+		CE7EE2B61F82562200EFAA94 /* filter_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = filter_encoder.h; path = ../../xz/liblzma/common/filter_encoder.h; sourceTree = "<group>"; };
+		CE7EE2B71F82562200EFAA94 /* index_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = index_hash.c; path = ../../xz/liblzma/common/index_hash.c; sourceTree = "<group>"; };
+		CE7EE2B81F82562200EFAA94 /* hardware_physmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hardware_physmem.c; path = ../../xz/liblzma/common/hardware_physmem.c; sourceTree = "<group>"; };
+		CE7EE2B91F82562300EFAA94 /* easy_buffer_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = easy_buffer_encoder.c; path = ../../xz/liblzma/common/easy_buffer_encoder.c; sourceTree = "<group>"; };
+		CE7EE2BA1F82562300EFAA94 /* block_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block_decoder.c; path = ../../xz/liblzma/common/block_decoder.c; sourceTree = "<group>"; };
+		CE7EE2BB1F82562300EFAA94 /* block_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_encoder.h; path = ../../xz/liblzma/common/block_encoder.h; sourceTree = "<group>"; };
+		CE7EE2BC1F82562300EFAA94 /* easy_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = easy_encoder.c; path = ../../xz/liblzma/common/easy_encoder.c; sourceTree = "<group>"; };
+		CE7EE2BD1F82562300EFAA94 /* filter_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_decoder.c; path = ../../xz/liblzma/common/filter_decoder.c; sourceTree = "<group>"; };
+		CE7EE2BE1F82562300EFAA94 /* memcmplen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memcmplen.h; path = ../../xz/liblzma/common/memcmplen.h; sourceTree = "<group>"; };
+		CE7EE2BF1F82562300EFAA94 /* block_buffer_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_buffer_encoder.h; path = ../../xz/liblzma/common/block_buffer_encoder.h; sourceTree = "<group>"; };
+		CE7EE2C01F82562300EFAA94 /* outqueue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = outqueue.c; path = ../../xz/liblzma/common/outqueue.c; sourceTree = "<group>"; };
+		CE7EE2C11F82562400EFAA94 /* filter_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_encoder.c; path = ../../xz/liblzma/common/filter_encoder.c; sourceTree = "<group>"; };
+		CE7EE2EB1F82562F00EFAA94 /* delta_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delta_decoder.h; path = ../../xz/liblzma/delta/delta_decoder.h; sourceTree = "<group>"; };
+		CE7EE2EC1F82562F00EFAA94 /* delta_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = delta_decoder.c; path = ../../xz/liblzma/delta/delta_decoder.c; sourceTree = "<group>"; };
+		CE7EE2ED1F82562F00EFAA94 /* delta_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = delta_common.c; path = ../../xz/liblzma/delta/delta_common.c; sourceTree = "<group>"; };
+		CE7EE2EE1F82562F00EFAA94 /* delta_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delta_common.h; path = ../../xz/liblzma/delta/delta_common.h; sourceTree = "<group>"; };
+		CE7EE2EF1F82562F00EFAA94 /* delta_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delta_private.h; path = ../../xz/liblzma/delta/delta_private.h; sourceTree = "<group>"; };
+		CE7EE2F01F82563000EFAA94 /* delta_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = delta_encoder.c; path = ../../xz/liblzma/delta/delta_encoder.c; sourceTree = "<group>"; };
+		CE7EE2F11F82563000EFAA94 /* delta_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = delta_encoder.h; path = ../../xz/liblzma/delta/delta_encoder.h; sourceTree = "<group>"; };
+		CE7EE2F51F82563B00EFAA94 /* lz_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lz_encoder.c; path = ../../xz/liblzma/lz/lz_encoder.c; sourceTree = "<group>"; };
+		CE7EE2F61F82563B00EFAA94 /* lz_encoder_hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lz_encoder_hash.h; path = ../../xz/liblzma/lz/lz_encoder_hash.h; sourceTree = "<group>"; };
+		CE7EE2F71F82563B00EFAA94 /* lz_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lz_decoder.h; path = ../../xz/liblzma/lz/lz_decoder.h; sourceTree = "<group>"; };
+		CE7EE2F81F82563B00EFAA94 /* lz_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lz_decoder.c; path = ../../xz/liblzma/lz/lz_decoder.c; sourceTree = "<group>"; };
+		CE7EE2F91F82563B00EFAA94 /* lz_encoder_hash_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lz_encoder_hash_table.h; path = ../../xz/liblzma/lz/lz_encoder_hash_table.h; sourceTree = "<group>"; };
+		CE7EE2FA1F82563B00EFAA94 /* lz_encoder_mf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lz_encoder_mf.c; path = ../../xz/liblzma/lz/lz_encoder_mf.c; sourceTree = "<group>"; };
+		CE7EE2FB1F82563B00EFAA94 /* lz_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lz_encoder.h; path = ../../xz/liblzma/lz/lz_encoder.h; sourceTree = "<group>"; };
+		CE7EE2FF1F82564600EFAA94 /* lzma2_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma2_decoder.h; path = ../../xz/liblzma/lzma/lzma2_decoder.h; sourceTree = "<group>"; };
+		CE7EE3001F82564600EFAA94 /* lzma_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma_decoder.c; path = ../../xz/liblzma/lzma/lzma_decoder.c; sourceTree = "<group>"; };
+		CE7EE3011F82564600EFAA94 /* lzma2_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma2_decoder.c; path = ../../xz/liblzma/lzma/lzma2_decoder.c; sourceTree = "<group>"; };
+		CE7EE3021F82564600EFAA94 /* lzma_encoder_optimum_normal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma_encoder_optimum_normal.c; path = ../../xz/liblzma/lzma/lzma_encoder_optimum_normal.c; sourceTree = "<group>"; };
+		CE7EE3031F82564700EFAA94 /* lzma_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma_common.h; path = ../../xz/liblzma/lzma/lzma_common.h; sourceTree = "<group>"; };
+		CE7EE3041F82564700EFAA94 /* lzma2_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma2_encoder.c; path = ../../xz/liblzma/lzma/lzma2_encoder.c; sourceTree = "<group>"; };
+		CE7EE3051F82564700EFAA94 /* lzma_encoder_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma_encoder_private.h; path = ../../xz/liblzma/lzma/lzma_encoder_private.h; sourceTree = "<group>"; };
+		CE7EE3061F82564700EFAA94 /* lzma_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma_encoder.c; path = ../../xz/liblzma/lzma/lzma_encoder.c; sourceTree = "<group>"; };
+		CE7EE3071F82564700EFAA94 /* lzma_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma_encoder.h; path = ../../xz/liblzma/lzma/lzma_encoder.h; sourceTree = "<group>"; };
+		CE7EE3081F82564700EFAA94 /* fastpos_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fastpos_table.c; path = ../../xz/liblzma/lzma/fastpos_table.c; sourceTree = "<group>"; };
+		CE7EE3091F82564700EFAA94 /* fastpos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fastpos.h; path = ../../xz/liblzma/lzma/fastpos.h; sourceTree = "<group>"; };
+		CE7EE30A1F82564700EFAA94 /* fastpos_tablegen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fastpos_tablegen.c; path = ../../xz/liblzma/lzma/fastpos_tablegen.c; sourceTree = "<group>"; };
+		CE7EE30B1F82564800EFAA94 /* lzma_encoder_presets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma_encoder_presets.c; path = ../../xz/liblzma/lzma/lzma_encoder_presets.c; sourceTree = "<group>"; };
+		CE7EE30C1F82564800EFAA94 /* lzma_encoder_optimum_fast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzma_encoder_optimum_fast.c; path = ../../xz/liblzma/lzma/lzma_encoder_optimum_fast.c; sourceTree = "<group>"; };
+		CE7EE30D1F82564800EFAA94 /* lzma_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma_decoder.h; path = ../../xz/liblzma/lzma/lzma_decoder.h; sourceTree = "<group>"; };
+		CE7EE30E1F82564800EFAA94 /* lzma2_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzma2_encoder.h; path = ../../xz/liblzma/lzma/lzma2_encoder.h; sourceTree = "<group>"; };
+		CE7EE3181F82565200EFAA94 /* price_table.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = price_table.c; path = ../../xz/liblzma/rangecoder/price_table.c; sourceTree = "<group>"; };
+		CE7EE3191F82565200EFAA94 /* range_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = range_decoder.h; path = ../../xz/liblzma/rangecoder/range_decoder.h; sourceTree = "<group>"; };
+		CE7EE31A1F82565200EFAA94 /* price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = price.h; path = ../../xz/liblzma/rangecoder/price.h; sourceTree = "<group>"; };
+		CE7EE31B1F82565200EFAA94 /* range_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = range_common.h; path = ../../xz/liblzma/rangecoder/range_common.h; sourceTree = "<group>"; };
+		CE7EE31C1F82565200EFAA94 /* range_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = range_encoder.h; path = ../../xz/liblzma/rangecoder/range_encoder.h; sourceTree = "<group>"; };
+		CE7EE31E1F82565C00EFAA94 /* arm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arm.c; path = ../../xz/liblzma/simple/arm.c; sourceTree = "<group>"; };
+		CE7EE31F1F82565C00EFAA94 /* armthumb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = armthumb.c; path = ../../xz/liblzma/simple/armthumb.c; sourceTree = "<group>"; };
+		CE7EE3201F82565D00EFAA94 /* simple_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simple_decoder.c; path = ../../xz/liblzma/simple/simple_decoder.c; sourceTree = "<group>"; };
+		CE7EE3211F82565D00EFAA94 /* sparc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sparc.c; path = ../../xz/liblzma/simple/sparc.c; sourceTree = "<group>"; };
+		CE7EE3221F82565D00EFAA94 /* simple_coder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_coder.h; path = ../../xz/liblzma/simple/simple_coder.h; sourceTree = "<group>"; };
+		CE7EE3231F82565D00EFAA94 /* simple_coder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simple_coder.c; path = ../../xz/liblzma/simple/simple_coder.c; sourceTree = "<group>"; };
+		CE7EE3241F82565D00EFAA94 /* x86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = x86.c; path = ../../xz/liblzma/simple/x86.c; sourceTree = "<group>"; };
+		CE7EE3251F82565D00EFAA94 /* simple_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_encoder.h; path = ../../xz/liblzma/simple/simple_encoder.h; sourceTree = "<group>"; };
+		CE7EE3261F82565D00EFAA94 /* simple_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_private.h; path = ../../xz/liblzma/simple/simple_private.h; sourceTree = "<group>"; };
+		CE7EE3271F82565D00EFAA94 /* simple_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = simple_decoder.h; path = ../../xz/liblzma/simple/simple_decoder.h; sourceTree = "<group>"; };
+		CE7EE3281F82565E00EFAA94 /* ia64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ia64.c; path = ../../xz/liblzma/simple/ia64.c; sourceTree = "<group>"; };
+		CE7EE3291F82565E00EFAA94 /* simple_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = simple_encoder.c; path = ../../xz/liblzma/simple/simple_encoder.c; sourceTree = "<group>"; };
+		CE7EE32A1F82565E00EFAA94 /* powerpc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = powerpc.c; path = ../../xz/liblzma/simple/powerpc.c; sourceTree = "<group>"; };
 		CEEB418D1ECE1A87000D0013 /* libxzlzma.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxzlzma.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,9 +267,145 @@
 		CEEB418F1ECE1A87000D0013 /* xzlzma */ = {
 			isa = PBXGroup;
 			children = (
-				CE2ADA801ECE1B0900D68A3D /* crn_decomp.h */,
-				CE2ADA811ECE1B0900D68A3D /* crn.cpp */,
-				CE2ADA821ECE1B0900D68A3D /* crnlib.h */,
+				CE7EE31E1F82565C00EFAA94 /* arm.c */,
+				CE7EE31F1F82565C00EFAA94 /* armthumb.c */,
+				CE7EE3281F82565E00EFAA94 /* ia64.c */,
+				CE7EE32A1F82565E00EFAA94 /* powerpc.c */,
+				CE7EE3231F82565D00EFAA94 /* simple_coder.c */,
+				CE7EE3221F82565D00EFAA94 /* simple_coder.h */,
+				CE7EE3201F82565D00EFAA94 /* simple_decoder.c */,
+				CE7EE3271F82565D00EFAA94 /* simple_decoder.h */,
+				CE7EE3291F82565E00EFAA94 /* simple_encoder.c */,
+				CE7EE3251F82565D00EFAA94 /* simple_encoder.h */,
+				CE7EE3261F82565D00EFAA94 /* simple_private.h */,
+				CE7EE3211F82565D00EFAA94 /* sparc.c */,
+				CE7EE3241F82565D00EFAA94 /* x86.c */,
+				CE7EE3181F82565200EFAA94 /* price_table.c */,
+				CE7EE31A1F82565200EFAA94 /* price.h */,
+				CE7EE31B1F82565200EFAA94 /* range_common.h */,
+				CE7EE3191F82565200EFAA94 /* range_decoder.h */,
+				CE7EE31C1F82565200EFAA94 /* range_encoder.h */,
+				CE7EE3081F82564700EFAA94 /* fastpos_table.c */,
+				CE7EE30A1F82564700EFAA94 /* fastpos_tablegen.c */,
+				CE7EE3091F82564700EFAA94 /* fastpos.h */,
+				CE7EE3031F82564700EFAA94 /* lzma_common.h */,
+				CE7EE3001F82564600EFAA94 /* lzma_decoder.c */,
+				CE7EE30D1F82564800EFAA94 /* lzma_decoder.h */,
+				CE7EE30C1F82564800EFAA94 /* lzma_encoder_optimum_fast.c */,
+				CE7EE3021F82564600EFAA94 /* lzma_encoder_optimum_normal.c */,
+				CE7EE30B1F82564800EFAA94 /* lzma_encoder_presets.c */,
+				CE7EE3051F82564700EFAA94 /* lzma_encoder_private.h */,
+				CE7EE3061F82564700EFAA94 /* lzma_encoder.c */,
+				CE7EE3071F82564700EFAA94 /* lzma_encoder.h */,
+				CE7EE3011F82564600EFAA94 /* lzma2_decoder.c */,
+				CE7EE2FF1F82564600EFAA94 /* lzma2_decoder.h */,
+				CE7EE3041F82564700EFAA94 /* lzma2_encoder.c */,
+				CE7EE30E1F82564800EFAA94 /* lzma2_encoder.h */,
+				CE7EE2F81F82563B00EFAA94 /* lz_decoder.c */,
+				CE7EE2F71F82563B00EFAA94 /* lz_decoder.h */,
+				CE7EE2F91F82563B00EFAA94 /* lz_encoder_hash_table.h */,
+				CE7EE2F61F82563B00EFAA94 /* lz_encoder_hash.h */,
+				CE7EE2FA1F82563B00EFAA94 /* lz_encoder_mf.c */,
+				CE7EE2F51F82563B00EFAA94 /* lz_encoder.c */,
+				CE7EE2FB1F82563B00EFAA94 /* lz_encoder.h */,
+				CE7EE2ED1F82562F00EFAA94 /* delta_common.c */,
+				CE7EE2EE1F82562F00EFAA94 /* delta_common.h */,
+				CE7EE2EC1F82562F00EFAA94 /* delta_decoder.c */,
+				CE7EE2EB1F82562F00EFAA94 /* delta_decoder.h */,
+				CE7EE2F01F82563000EFAA94 /* delta_encoder.c */,
+				CE7EE2F11F82563000EFAA94 /* delta_encoder.h */,
+				CE7EE2EF1F82562F00EFAA94 /* delta_private.h */,
+				CE7EE2B31F82562200EFAA94 /* alone_decoder.c */,
+				CE7EE29B1F82561F00EFAA94 /* alone_decoder.h */,
+				CE7EE29C1F82561F00EFAA94 /* alone_encoder.c */,
+				CE7EE2901F82561E00EFAA94 /* auto_decoder.c */,
+				CE7EE2B21F82562200EFAA94 /* block_buffer_decoder.c */,
+				CE7EE2AB1F82562100EFAA94 /* block_buffer_encoder.c */,
+				CE7EE2BF1F82562300EFAA94 /* block_buffer_encoder.h */,
+				CE7EE2BA1F82562300EFAA94 /* block_decoder.c */,
+				CE7EE2AC1F82562100EFAA94 /* block_decoder.h */,
+				CE7EE2A71F82562100EFAA94 /* block_encoder.c */,
+				CE7EE2BB1F82562300EFAA94 /* block_encoder.h */,
+				CE7EE28E1F82561E00EFAA94 /* block_header_decoder.c */,
+				CE7EE2931F82561E00EFAA94 /* block_header_encoder.c */,
+				CE7EE2AA1F82562100EFAA94 /* block_util.c */,
+				CE7EE2A51F82562000EFAA94 /* common.c */,
+				CE7EE2A11F82562000EFAA94 /* common.h */,
+				CE7EE2B91F82562300EFAA94 /* easy_buffer_encoder.c */,
+				CE7EE2A41F82562000EFAA94 /* easy_decoder_memusage.c */,
+				CE7EE28A1F82561D00EFAA94 /* easy_encoder_memusage.c */,
+				CE7EE2BC1F82562300EFAA94 /* easy_encoder.c */,
+				CE7EE28F1F82561E00EFAA94 /* easy_preset.c */,
+				CE7EE2A61F82562000EFAA94 /* easy_preset.h */,
+				CE7EE2A81F82562100EFAA94 /* filter_buffer_decoder.c */,
+				CE7EE29F1F82562000EFAA94 /* filter_buffer_encoder.c */,
+				CE7EE2A01F82562000EFAA94 /* filter_common.c */,
+				CE7EE2AE1F82562100EFAA94 /* filter_common.h */,
+				CE7EE2BD1F82562300EFAA94 /* filter_decoder.c */,
+				CE7EE2B41F82562200EFAA94 /* filter_decoder.h */,
+				CE7EE2C11F82562400EFAA94 /* filter_encoder.c */,
+				CE7EE2B61F82562200EFAA94 /* filter_encoder.h */,
+				CE7EE2AF1F82562100EFAA94 /* filter_flags_decoder.c */,
+				CE7EE2A21F82562000EFAA94 /* filter_flags_encoder.c */,
+				CE7EE2971F82561F00EFAA94 /* hardware_cputhreads.c */,
+				CE7EE2B81F82562200EFAA94 /* hardware_physmem.c */,
+				CE7EE2B01F82562200EFAA94 /* index_decoder.c */,
+				CE7EE29E1F82562000EFAA94 /* index_encoder.c */,
+				CE7EE2981F82561F00EFAA94 /* index_encoder.h */,
+				CE7EE2B71F82562200EFAA94 /* index_hash.c */,
+				CE7EE2A31F82562000EFAA94 /* index.c */,
+				CE7EE2B51F82562200EFAA94 /* index.h */,
+				CE7EE2BE1F82562300EFAA94 /* memcmplen.h */,
+				CE7EE2C01F82562300EFAA94 /* outqueue.c */,
+				CE7EE28C1F82561D00EFAA94 /* outqueue.h */,
+				CE7EE29A1F82561F00EFAA94 /* stream_buffer_decoder.c */,
+				CE7EE28B1F82561D00EFAA94 /* stream_buffer_encoder.c */,
+				CE7EE29D1F82561F00EFAA94 /* stream_decoder.c */,
+				CE7EE2A91F82562100EFAA94 /* stream_decoder.h */,
+				CE7EE2941F82561E00EFAA94 /* stream_encoder.c */,
+				CE7EE2991F82561F00EFAA94 /* stream_flags_common.c */,
+				CE7EE2911F82561E00EFAA94 /* stream_flags_common.h */,
+				CE7EE28D1F82561D00EFAA94 /* stream_flags_decoder.c */,
+				CE7EE2951F82561F00EFAA94 /* stream_flags_encoder.c */,
+				CE7EE2961F82561F00EFAA94 /* vli_decoder.c */,
+				CE7EE2921F82561E00EFAA94 /* vli_encoder.c */,
+				CE7EE2B11F82562200EFAA94 /* vli_size.c */,
+				CE7EE2801F82560F00EFAA94 /* check.c */,
+				CE7EE2811F82560F00EFAA94 /* check.h */,
+				CE7EE27A1F82560E00EFAA94 /* crc_macros.h */,
+				CE7EE27E1F82560F00EFAA94 /* crc32_fast.c */,
+				CE7EE2831F82561000EFAA94 /* crc32_table_be.h */,
+				CE7EE27D1F82560F00EFAA94 /* crc32_table_le.h */,
+				CE7EE27F1F82560F00EFAA94 /* crc32_table.c */,
+				CE7EE27C1F82560F00EFAA94 /* crc64_fast.c */,
+				CE7EE2781F82560E00EFAA94 /* crc64_table_be.h */,
+				CE7EE2821F82560F00EFAA94 /* crc64_table_le.h */,
+				CE7EE2791F82560E00EFAA94 /* crc64_table.c */,
+				CE7EE27B1F82560E00EFAA94 /* sha256.c */,
+				CE7EE26B1F8255FC00EFAA94 /* base.h */,
+				CE7EE26E1F8255FC00EFAA94 /* bcj.h */,
+				CE7EE2731F8255FC00EFAA94 /* block.h */,
+				CE7EE2721F8255FC00EFAA94 /* check.h */,
+				CE7EE2761F8255FD00EFAA94 /* container.h */,
+				CE7EE26D1F8255FC00EFAA94 /* delta.h */,
+				CE7EE26A1F8255FC00EFAA94 /* filter.h */,
+				CE7EE2701F8255FC00EFAA94 /* hardware.h */,
+				CE7EE26F1F8255FC00EFAA94 /* index_hash.h */,
+				CE7EE2691F8255FC00EFAA94 /* index.h */,
+				CE7EE2741F8255FC00EFAA94 /* lzma12.h */,
+				CE7EE2751F8255FD00EFAA94 /* stream_flags.h */,
+				CE7EE26C1F8255FC00EFAA94 /* version.h */,
+				CE7EE2711F8255FC00EFAA94 /* vli.h */,
+				CE7EE2681F8255F400EFAA94 /* lzma.h */,
+				CE7EE2611F8255E800EFAA94 /* sysdefs.h */,
+				CE7EE2641F8255E900EFAA94 /* tuklib_common.h */,
+				CE7EE25E1F8255E800EFAA94 /* tuklib_config.h */,
+				CE7EE2601F8255E800EFAA94 /* tuklib_cpucores.c */,
+				CE7EE2621F8255E800EFAA94 /* tuklib_cpucores.h */,
+				CE7EE25F1F8255E800EFAA94 /* tuklib_integer.h */,
+				CE7EE2651F8255E900EFAA94 /* tuklib_physmem.c */,
+				CE7EE2631F8255E800EFAA94 /* tuklib_physmem.h */,
+				CE0945211F82502C00CC46E4 /* config.h */,
 			);
 			path = xzlzma;
 			sourceTree = "<group>";
@@ -123,7 +467,79 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2ADA831ECE1B0900D68A3D /* crn.cpp in Sources */,
+				CE7EE32B1F82565E00EFAA94 /* arm.c in Sources */,
+				CE7EE2EA1F82562400EFAA94 /* filter_encoder.c in Sources */,
+				CE7EE3331F82565E00EFAA94 /* powerpc.c in Sources */,
+				CE7EE2C31F82562400EFAA94 /* stream_buffer_encoder.c in Sources */,
+				CE7EE3131F82564800EFAA94 /* lzma_encoder.c in Sources */,
+				CE7EE3301F82565E00EFAA94 /* x86.c in Sources */,
+				CE7EE2841F82561000EFAA94 /* crc64_table.c in Sources */,
+				CE7EE2E41F82562400EFAA94 /* hardware_physmem.c in Sources */,
+				CE7EE2D31F82562400EFAA94 /* filter_buffer_encoder.c in Sources */,
+				CE7EE2DE1F82562400EFAA94 /* filter_flags_decoder.c in Sources */,
+				CE7EE2DB1F82562400EFAA94 /* block_util.c in Sources */,
+				CE7EE2C81F82562400EFAA94 /* vli_encoder.c in Sources */,
+				CE7EE2E21F82562400EFAA94 /* alone_decoder.c in Sources */,
+				CE7EE3121F82564800EFAA94 /* lzma2_encoder.c in Sources */,
+				CE7EE2F31F82563000EFAA94 /* delta_common.c in Sources */,
+				CE7EE32F1F82565E00EFAA94 /* simple_coder.c in Sources */,
+				CE7EE2861F82561000EFAA94 /* crc64_fast.c in Sources */,
+				CE7EE2DF1F82562400EFAA94 /* index_decoder.c in Sources */,
+				CE7EE2E01F82562400EFAA94 /* vli_size.c in Sources */,
+				CE7EE2F41F82563000EFAA94 /* delta_encoder.c in Sources */,
+				CE7EE2C71F82562400EFAA94 /* auto_decoder.c in Sources */,
+				CE7EE2C51F82562400EFAA94 /* block_header_decoder.c in Sources */,
+				CE7EE30F1F82564800EFAA94 /* lzma_decoder.c in Sources */,
+				CE7EE2C61F82562400EFAA94 /* easy_preset.c in Sources */,
+				CE7EE2CC1F82562400EFAA94 /* vli_decoder.c in Sources */,
+				CE7EE2CA1F82562400EFAA94 /* stream_encoder.c in Sources */,
+				CE7EE3171F82564800EFAA94 /* lzma_encoder_optimum_fast.c in Sources */,
+				CE7EE3151F82564800EFAA94 /* fastpos_tablegen.c in Sources */,
+				CE7EE32C1F82565E00EFAA94 /* armthumb.c in Sources */,
+				CE7EE2D91F82562400EFAA94 /* block_encoder.c in Sources */,
+				CE7EE2FE1F82563C00EFAA94 /* lz_encoder_mf.c in Sources */,
+				CE7EE32D1F82565E00EFAA94 /* simple_decoder.c in Sources */,
+				CE7EE2671F8255E900EFAA94 /* tuklib_physmem.c in Sources */,
+				CE7EE2D11F82562400EFAA94 /* stream_decoder.c in Sources */,
+				CE7EE2C21F82562400EFAA94 /* easy_encoder_memusage.c in Sources */,
+				CE7EE2E61F82562400EFAA94 /* block_decoder.c in Sources */,
+				CE7EE3311F82565E00EFAA94 /* ia64.c in Sources */,
+				CE7EE32E1F82565E00EFAA94 /* sparc.c in Sources */,
+				CE7EE2E51F82562400EFAA94 /* easy_buffer_encoder.c in Sources */,
+				CE7EE2C91F82562400EFAA94 /* block_header_encoder.c in Sources */,
+				CE7EE2DA1F82562400EFAA94 /* filter_buffer_decoder.c in Sources */,
+				CE7EE3141F82564800EFAA94 /* fastpos_table.c in Sources */,
+				CE7EE2E91F82562400EFAA94 /* outqueue.c in Sources */,
+				CE7EE3101F82564800EFAA94 /* lzma2_decoder.c in Sources */,
+				CE7EE2851F82561000EFAA94 /* sha256.c in Sources */,
+				CE7EE2D01F82562400EFAA94 /* alone_encoder.c in Sources */,
+				CE7EE2FD1F82563C00EFAA94 /* lz_decoder.c in Sources */,
+				CE7EE2D51F82562400EFAA94 /* filter_flags_encoder.c in Sources */,
+				CE7EE3111F82564800EFAA94 /* lzma_encoder_optimum_normal.c in Sources */,
+				CE7EE2881F82561000EFAA94 /* crc32_table.c in Sources */,
+				CE7EE2E11F82562400EFAA94 /* block_buffer_decoder.c in Sources */,
+				CE7EE2CD1F82562400EFAA94 /* hardware_cputhreads.c in Sources */,
+				CE7EE2FC1F82563C00EFAA94 /* lz_encoder.c in Sources */,
+				CE7EE2DC1F82562400EFAA94 /* block_buffer_encoder.c in Sources */,
+				CE7EE2CE1F82562400EFAA94 /* stream_flags_common.c in Sources */,
+				CE7EE2E81F82562400EFAA94 /* filter_decoder.c in Sources */,
+				CE7EE31D1F82565300EFAA94 /* price_table.c in Sources */,
+				CE7EE2D41F82562400EFAA94 /* filter_common.c in Sources */,
+				CE7EE2D81F82562400EFAA94 /* common.c in Sources */,
+				CE7EE2661F8255E900EFAA94 /* tuklib_cpucores.c in Sources */,
+				CE7EE2F21F82563000EFAA94 /* delta_decoder.c in Sources */,
+				CE7EE2E71F82562400EFAA94 /* easy_encoder.c in Sources */,
+				CE7EE2CB1F82562400EFAA94 /* stream_flags_encoder.c in Sources */,
+				CE7EE2E31F82562400EFAA94 /* index_hash.c in Sources */,
+				CE7EE3321F82565E00EFAA94 /* simple_encoder.c in Sources */,
+				CE7EE2D21F82562400EFAA94 /* index_encoder.c in Sources */,
+				CE7EE2D71F82562400EFAA94 /* easy_decoder_memusage.c in Sources */,
+				CE7EE2CF1F82562400EFAA94 /* stream_buffer_decoder.c in Sources */,
+				CE7EE2D61F82562400EFAA94 /* index.c in Sources */,
+				CE7EE3161F82564800EFAA94 /* lzma_encoder_presets.c in Sources */,
+				CE7EE2891F82561000EFAA94 /* check.c in Sources */,
+				CE7EE2871F82561000EFAA94 /* crc32_fast.c in Sources */,
+				CE7EE2C41F82562400EFAA94 /* stream_flags_decoder.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +578,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+					"HAVE_CONFIG_H;DLL_EXPORT;NDEBUG;_USRDLL;LIBLZMADLL_EXPORTS;DEBUG=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -171,6 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -207,12 +624,14 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "HAVE_CONFIG_H;DLL_EXPORT;NDEBUG;_USRDLL;LIBLZMADLL_EXPORTS;";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
