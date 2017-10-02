@@ -13,15 +13,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagedXZLZMA.Sample.NetCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedXZLZMA.Sample.NetFramework", "Sample\ManagedXZLZMA.Sample.NetFramework\ManagedXZLZMA.Sample.NetFramework.csproj", "{817DA388-394D-4EE2-9747-BC1F9EAC182E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedZXLZMA.Sample.UWP", "Sample\ManagedXZLZMA.Sample.UWP\ManagedXZLZMA.Sample.UWP.csproj", "{0DA00A54-836A-49F8-98F3-6E820A0FA404}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedXZLZMA.Sample.UWP", "Sample\ManagedXZLZMA.Sample.UWP\ManagedXZLZMA.Sample.UWP.csproj", "{0DA00A54-836A-49F8-98F3-6E820A0FA404}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedXZLZMA.Sample.Android", "Sample\ManagedXZLZMA.Sample.Android\ManagedXZLZMA.Sample.Android.csproj", "{60F5209A-E2BB-401D-8733-D8D92F235ED3}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ManagedXZLZMA.Sample.Shared", "Sample\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.shproj", "{32C183B4-A886-41C0-A2C5-2EBDD552372F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagedXZLZMA.iOS", "ManagedXZLZMA.iOS\ManagedXZLZMA.iOS.csproj", "{1727434E-BE6B-4E08-924F-43800AFA8D18}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Sample\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems*{0da00a54-836a-49f8-98f3-6e820a0fa404}*SharedItemsImports = 4
+		ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.projitems*{1727434e-be6b-4e08-924f-43800afa8d18}*SharedItemsImports = 4
 		ManagedXZLZMA.Shared\ManagedXZLZMA.Shared.projitems*{213afd0a-15f8-43dc-b3ba-d5b61bd8d752}*SharedItemsImports = 13
 		Sample\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems*{32c183b4-a886-41c0-a2c5-2ebdd552372f}*SharedItemsImports = 13
 		Sample\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems*{60f5209a-e2bb-401d-8733-d8d92f235ed3}*SharedItemsImports = 4
@@ -130,6 +133,22 @@ Global
 		{60F5209A-E2BB-401D-8733-D8D92F235ED3}.Release|x86.ActiveCfg = Release|Any CPU
 		{60F5209A-E2BB-401D-8733-D8D92F235ED3}.Release|x86.Build.0 = Release|Any CPU
 		{60F5209A-E2BB-401D-8733-D8D92F235ED3}.Release|x86.Deploy.0 = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|ARM.Build.0 = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|x64.Build.0 = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Debug|x86.Build.0 = Debug|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|ARM.Build.0 = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|x64.ActiveCfg = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|x64.Build.0 = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|x86.ActiveCfg = Release|Any CPU
+		{1727434E-BE6B-4E08-924F-43800AFA8D18}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
