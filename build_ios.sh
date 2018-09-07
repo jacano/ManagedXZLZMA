@@ -1,9 +1,13 @@
-pushd src/xzlzma.iOS
+pushd src/crunch.iOS
 
 xcodebuild -configuration Release -sdk iphonesimulator clean build
 xcodebuild -configuration Release -sdk iphoneos clean build
-lipo -create -output "build/libxzlzma.a" "build/Release-iphoneos/libxzlzma.a" "build/Release-iphonesimulator/libxzlzma.a"
+
+mkdir -p fat
+lipo -create -output "fat/libcrunch.a" "build/Release-iphoneos/libcrunch.a" "build/Release-iphonesimulator/libcrunch.a"
 
 popd
 
-sh upload_ios_build.sh
+rm -rf artifacts/ios
+mkdir -p artifacts/ios
+mv src/crunch.ios/fat/ artifacts/ios

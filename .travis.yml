@@ -1,11 +1,6 @@
 language: cpp
-
-dist: trusty
-
 os: osx
-osx_image: xcode8.3
-
-sudo: required
+osx_image: xcode9.2
 
 script: 
     - ./build_ios.sh

@@ -5,13 +5,13 @@ Intermediate/
 Debug/
 Release/
 .vs/
-artifacts/
 output/
 AppPackages/
 BundleArtifacts/
-xzlzma.build/
 xcuserdata/
 secrets/
+libs/
+nuget/
 
 *.suo
 *.user
@@ -26,6 +26,7 @@ secrets/
 *.xcuserstate
 *.DS_Store
 *.userprefs
+*.nupkg
 
 generate.info
 WaveContent.cs
