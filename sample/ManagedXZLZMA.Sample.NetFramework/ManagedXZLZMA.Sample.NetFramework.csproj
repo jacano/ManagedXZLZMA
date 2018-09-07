@@ -53,13 +53,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ManagedXZLZMA\ManagedXZLZMA.csproj">
-      <Project>{6729b237-5f55-4b5a-b9d8-ddfe4f3b06e1}</Project>
-      <Name>ManagedXZLZMA</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="..\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\..\ManagedXZLZMA\windows\ManagedXZLZMA.targets" />
 </Project>

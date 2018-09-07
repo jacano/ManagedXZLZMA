@@ -137,18 +137,11 @@
       <Version>5.4.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ManagedXZLZMA\ManagedXZLZMA.csproj">
-      <Project>{6729b237-5f55-4b5a-b9d8-ddfe4f3b06e1}</Project>
-      <Name>ManagedXZLZMA</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="..\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  <Import Project="..\..\ManagedXZLZMA\uwp\ManagedXZLZMA.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

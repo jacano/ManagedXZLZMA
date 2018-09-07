@@ -78,15 +78,8 @@
     <Folder Include="Resources\mipmap-xxhdpi\" />
     <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ManagedXZLZMA\ManagedXZLZMA.csproj">
-      <Project>{6729b237-5f55-4b5a-b9d8-ddfe4f3b06e1}</Project>
-      <Name>ManagedXZLZMA</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="..\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <Import Project="..\..\ManagedXZLZMA\android\ManagedXZLZMA.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 		Other similar extension points exist, see Microsoft.Common.targets.
 		<Target Name="BeforeBuild">

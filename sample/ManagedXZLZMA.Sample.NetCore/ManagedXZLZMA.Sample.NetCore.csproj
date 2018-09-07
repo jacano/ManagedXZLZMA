@@ -7,11 +7,5 @@
   </PropertyGroup>
 
   <Import Project="..\ManagedXZLZMA.Sample.Shared\ManagedXZLZMA.Sample.Shared.projitems" Label="Shared" />
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\ManagedXZLZMA\ManagedXZLZMA.csproj" />
-  </ItemGroup>
-  
-  <Import Project="..\..\ManagedXZLZMA\windows\ManagedXZLZMA.targets" />
   
 </Project>
