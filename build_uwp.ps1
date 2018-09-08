@@ -2,18 +2,20 @@
 
 PrepareVSEnviroment
 
-pushd src/crunch.Windows/universal
+pushd src/xzlzma.Windows/universal
 
-msbuild crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="Win32"
-msbuild crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="x64"
-msbuild crunchlibUniversal.vcxproj /p:Configuration="Release" /p:Platform="ARM"
+msbuild libxzlzma_universal_dll.vcxproj /p:Configuration="Release" /p:Platform="Win32"
+msbuild libxzlzma_universal_dll.vcxproj /p:Configuration="Release" /p:Platform="x64"
+msbuild libxzlzma_universal_dll.vcxproj /p:Configuration="Release" /p:Platform="ARM"
 
-xcopy /F /R /Y /I Win32\Release\libcrunch.dll build\x86\*
-xcopy /F /R /Y /I x64\Release\libcrunch.dll build\x64\*
-xcopy /F /R /Y /I ARM\Release\libcrunch.dll build\arm\*
+xcopy /F /R /Y /I Win32\Release\libxzlzma.dll build\x86\*
+xcopy /F /R /Y /I x64\Release\libxzlzma.dll build\x64\*
+xcopy /F /R /Y /I ARM\Release\libxzlzma.dll build\arm\*
 
 popd
 
-New-Item "artifacts" -type directory -force
-Move-Item "src/crunch.Windows/universal/build" "artifacts/uwp" -Force
+if (-not (Test-Path "artifacts")) { New-Item "artifacts" -type directory -force }
+if (-not (Test-Path "artifacts/uwp")) { New-Item "artifacts/uwp" -type directory -force }
+
+Move-Item "src/xzlzma.Windows/universal/build" "artifacts/uwp" -Force
 

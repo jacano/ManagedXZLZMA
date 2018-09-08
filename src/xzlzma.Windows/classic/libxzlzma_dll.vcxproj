@@ -49,7 +49,7 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="Shared">
-    <Import Project="..\xzlzma.Shared\libxzlzma.Shared.vcxitems" Label="Shared" />
+    <Import Project="..\shared\libxzlzma.Shared.vcxitems" Label="Shared" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -97,7 +97,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;../../xz/liblzma/check;../../xz/liblzma/delta;../../xz/liblzma/lz;../../xz/liblzma/lzma;../../xz/liblzma/rangecoder;../../xz/liblzma/simple</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -105,7 +105,7 @@
       <SubSystem>Windows</SubSystem>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,14 +115,14 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;../../xz/liblzma/check;../../xz/liblzma/delta;../../xz/liblzma/lz;../../xz/liblzma/lzma;../../xz/liblzma/rangecoder;../../xz/liblzma/simple</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,7 +131,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;../../xz/liblzma/check;../../xz/liblzma/delta;../../xz/liblzma/lz;../../xz/liblzma/lzma;../../xz/liblzma/rangecoder;../../xz/liblzma/simple</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -141,7 +141,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -150,7 +150,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;../../xz/liblzma/check;../../xz/liblzma/delta;../../xz/liblzma/lz;../../xz/liblzma/lzma;../../xz/liblzma/rangecoder;../../xz/liblzma/simple</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -159,7 +159,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
@@ -168,7 +168,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;../../xz/liblzma/check;../../xz/liblzma/delta;../../xz/liblzma/lz;../../xz/liblzma/lzma;../../xz/liblzma/rangecoder;../../xz/liblzma/simple</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -178,7 +178,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|x64'">
@@ -187,7 +187,7 @@
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;../xz/liblzma/check;../xz/liblzma/delta;../xz/liblzma/lz;../xz/liblzma/lzma;../xz/liblzma/rangecoder;../xz/liblzma/simple</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;../../xz/liblzma/check;../../xz/liblzma/delta;../../xz/liblzma/lz;../../xz/liblzma/lzma;../../xz/liblzma/rangecoder;../../xz/liblzma/simple</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -196,7 +196,7 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
     <ResourceCompile>
-      <AdditionalIncludeDirectories>./;../xz;../xz/liblzma/common;../xz/common;../xz/liblzma/api;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../../xz;../../xz/liblzma/common;../../xz/common;../../xz/liblzma/api;</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
