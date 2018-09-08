@@ -15,7 +15,8 @@ xcopy /F /R /Y /I ARM\Release\libxzlzma.dll build\arm\*
 popd
 
 if (-not (Test-Path "artifacts")) { New-Item "artifacts" -type directory -force }
-if (-not (Test-Path "artifacts/uwp")) { New-Item "artifacts/uwp" -type directory -force }
+if (Test-Path "artifacts/uwp") { Remove-Item "artifacts/uwp" -Force -Recurse }
+New-Item "artifacts/uwp" -type directory -force
 
 Move-Item "src/xzlzma.Windows/universal/build" "artifacts/uwp" -Force
 
