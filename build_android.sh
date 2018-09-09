@@ -6,4 +6,5 @@ popd
 
 rm -rf artifacts/android
 mkdir -p artifacts/android
-mv src/xzlzma.android/libs artifacts/android
+mv -v src/xzlzma.android/libs/* artifacts/android/
+cp -r artifacts/android/armeabi-v7a artifacts/android/armeabi/
