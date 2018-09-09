@@ -1,22 +1,22 @@
-..\xz\common\tuklib_cpucores.c
-..\xz\common\tuklib_physmem.c
-..\xz\liblzma\check\check.c
-..\xz\liblzma\check\crc32_fast.c
-..\xz\liblzma\check\crc32_table.c
-..\xz\liblzma\check\crc64_fast.c
-..\xz\liblzma\check\crc64_table.c
-..\xz\liblzma\check\sha256.c
-..\xz\liblzma\common\alone_decoder.c
-..\xz\liblzma\common\alone_encoder.c
-..\xz\liblzma\common\auto_decoder.c
-..\xz\liblzma\common\block_buffer_decoder.c
-..\xz\liblzma\common\block_buffer_encoder.c
-..\xz\liblzma\common\block_decoder.c
-..\xz\liblzma\common\block_encoder.c
-..\xz\liblzma\common\block_header_decoder.c
-..\xz\liblzma\common\block_header_encoder.c
-..\xz\liblzma\common\block_util.c
-..\xz\liblzma\common\common.c
+..\xz\common\tuklib_cpucores.c \
+..\xz\common\tuklib_physmem.c \
+..\xz\liblzma\check\check.c \
+..\xz\liblzma\check\crc32_fast.c \
+..\xz\liblzma\check\crc32_table.c \
+..\xz\liblzma\check\crc64_fast.c \
+..\xz\liblzma\check\crc64_table.c \
+..\xz\liblzma\check\sha256.c \
+..\xz\liblzma\common\alone_decoder.c \
+..\xz\liblzma\common\alone_encoder.c \
+..\xz\liblzma\common\auto_decoder.c \
+..\xz\liblzma\common\block_buffer_decoder.c \
+..\xz\liblzma\common\block_buffer_encoder.c \
+..\xz\liblzma\common\block_decoder.c \
+..\xz\liblzma\common\block_encoder.c \
+..\xz\liblzma\common\block_header_decoder.c \
+..\xz\liblzma\common\block_header_encoder.c \
+..\xz\liblzma\common\block_util.c \
+..\xz\liblzma\common\common.c \
 ..\xz\liblzma\common\easy_buffer_encoder.c
 ..\xz\liblzma\common\easy_decoder_memusage.c
 ..\xz\liblzma\common\easy_encoder.c
