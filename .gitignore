@@ -12,6 +12,7 @@ xcuserdata/
 secrets/
 libs/
 nuget/
+artifacts/
 
 *.suo
 *.user
