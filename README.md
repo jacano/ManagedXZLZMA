@@ -14,6 +14,6 @@ The following functions are getting call under the hood to process it:
 | Platforms      |
 | ------------   |
 | netstandard1.2 |
-| net451         |
+| net45          |
 | MonoAndroid    |
 | uap10.0        |
