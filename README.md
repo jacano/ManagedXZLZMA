@@ -6,10 +6,6 @@ Managed wrapper for XZ LZMA stream decoder from XZ project (https://tukaani.org/
 
 ManagedXZLZMA provides the XZDecompressStream class to decompress in C# a given Stream using almost direct Pinvokes to C/C++ code.
 
-The following functions are getting call under the hood to process it:
-* lzma_code
-* lzma_end
-* lzma_auto_decoder
 
 | Platforms      |
 | ------------   |
