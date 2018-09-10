@@ -3,8 +3,16 @@
 
 	<ItemGroup>
   
-		<Compile Include="$(MSBuildThisFileDirectory)../src/CrunchPInvoke.cs">
-			<Link>ManagedCrunch.Bindings/CrunchPInvoke.cs</Link>
+		<Compile Include="$(MSBuildThisFileDirectory)../src/ManagedXZPInvoke.cs">
+			<Link>ManagedXZLZMA.Bindings/ManagedXZPInvoke.cs</Link>
+		</Compile>
+		
+		<Compile Include="$(MSBuildThisFileDirectory)../src/Types.cs">
+			<Link>ManagedXZLZMA.Bindings/Types.cs</Link>
+		</Compile>
+		
+		<Compile Include="$(MSBuildThisFileDirectory)../src/XZDecompressStream.cs">
+			<Link>ManagedXZLZMA.Bindings/XZDecompressStream.cs</Link>
 		</Compile>
 		
   </ItemGroup>

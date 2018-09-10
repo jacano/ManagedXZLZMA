@@ -3,7 +3,7 @@
 
     <ItemGroup>
         <Content Include="$(MSBuildThisFileDirectory)$(Platform)\libxzlzma.dll" Condition="Exists('$(MSBuildThisFileDirectory)$(Platform)\libxzlzma.dll')">
-			      <Link>libxzlzma.dll</Link>
+			<Link>libxzlzma.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </Content>
 	</ItemGroup>

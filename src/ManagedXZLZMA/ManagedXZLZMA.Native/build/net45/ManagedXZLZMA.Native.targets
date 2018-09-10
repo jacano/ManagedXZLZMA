@@ -23,7 +23,7 @@
 	
 	<ItemGroup>
         <None Include="$(PreferredNativeXZLZMAPath)">
-			      <Link>libxzlzma.dll</Link>
+			<Link>libxzlzma.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
     </ItemGroup>
@@ -32,11 +32,11 @@
 	<!-- a special case for Any CPU -->
     <ItemGroup Condition=" '$(PlatformTarget)' != 'x64' and '$(PlatformTarget)' != 'x86' ">
         <None Include="$(MSBuildThisFileDirectory)x86\libxzlzma.dll">
-			      <Link>x86\libxzlzma.dll</Link>
+			<Link>x86\libxzlzma.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
         <None Include="$(MSBuildThisFileDirectory)x64\libxzlzma.dll">
-			      <Link>x64\libxzlzma.dll</Link>
+			<Link>x64\libxzlzma.dll</Link>
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
         </None>
 	</ItemGroup>
