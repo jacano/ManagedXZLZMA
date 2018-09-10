@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE := libxzlzma
 LOCAL_EXPORT_CFLAGS += \
-	-DHAVE_CONFIG_H
+	-DHAVE_CONFIG_H \
 	-DDLL_EXPORT \
 	-DNDEBUG \
 	-D_USRDLL \
