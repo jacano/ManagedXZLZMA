@@ -8,8 +8,8 @@
         <description>ManagedXZLZMA</description>
 		<dependencies>
 			<group>
-				<dependency id="ManagedXZLZMA.Bindings" version="1.0.8" />
-				<dependency id="ManagedXZLZMA.Native" version="1.0.8" />
+				<dependency id="ManagedXZLZMA.Bindings" version="1.0.4" />
+				<dependency id="ManagedXZLZMA.Native" version="1.0.4" />
 			</group>
 		</dependencies>
 	</metadata>

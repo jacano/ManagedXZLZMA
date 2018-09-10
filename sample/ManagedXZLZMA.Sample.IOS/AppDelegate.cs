@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using ManagedXZLZMA.Sample.Shared;
 using UIKit;
 
 namespace Blank
@@ -24,6 +25,8 @@ namespace Blank
 
             // make the window visible
             Window.MakeKeyAndVisible();
+
+            TestHelper.TestMethod();
 
             return true;
         }
