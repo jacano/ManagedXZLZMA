@@ -16,4 +16,5 @@ The following functions are getting call under the hood to process it:
 | netstandard1.2 |
 | net45          |
 | MonoAndroid    |
+| XamariniOS     |
 | uap10.0        |
