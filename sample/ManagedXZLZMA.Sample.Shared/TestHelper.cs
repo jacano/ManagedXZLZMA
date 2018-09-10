@@ -4,9 +4,9 @@ namespace ManagedXZLZMA.Sample.Shared
 {
     public static class TestHelper
     {
-        public static void TestMethod()
+        public static bool TestMethod()
         {
-            FileHelper.ProcessEmbeddedFile("data.lzma", (b) =>
+            return FileHelper.ProcessEmbeddedFile("data.lzma", (b) =>
             {
                 using (var ms = new MemoryStream(b))
                 {
@@ -14,8 +14,15 @@ namespace ManagedXZLZMA.Sample.Shared
                     {
                         var buffer = new byte[4];
                         xzDecompressStream.Read(buffer, 0, 4);
+
+                        if(buffer[0] == 103)
+                        {
+                            return true;
+                        }
                     }
                 }
+
+                return false;
             });
         }
     }

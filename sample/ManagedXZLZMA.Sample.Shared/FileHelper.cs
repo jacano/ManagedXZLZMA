@@ -6,7 +6,7 @@ namespace ManagedXZLZMA.Sample.Shared
 {
     public static class FileHelper
     {
-        public static void ProcessEmbeddedFile(string name, Action<byte[]> action)
+        public static bool ProcessEmbeddedFile(string name, Func<byte[], bool> func)
         {
             using (var stream = typeof(FileHelper).GetTypeInfo().Assembly.GetManifestResourceStream(name))
             {
@@ -14,7 +14,7 @@ namespace ManagedXZLZMA.Sample.Shared
                 using (var memoryStream = new MemoryStream(buffer))
                 {
                     stream.CopyTo(memoryStream);
-                    action(buffer);
+                    return func(buffer);
                 }
             }
         }
