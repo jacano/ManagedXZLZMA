@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ManagedXZLZMA</id>
-        <version>1.0.0</version>
+        <version>$version$</version>
         <authors>jacano</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>ManagedXZLZMA</description>
 		<dependencies>
 			<group>
-				<dependency id="ManagedXZLZMA.Bindings" version="1.0.4" />
-				<dependency id="ManagedXZLZMA.Native" version="1.0.4" />
+				<dependency id="ManagedXZLZMA.Bindings" version="$version$" />
+				<dependency id="ManagedXZLZMA.Native" version="$version$" />
 			</group>
 		</dependencies>
 	</metadata>
