@@ -1,7 +1,7 @@
-<#
-	https://jacanovsts.visualstudio.com/ManagedXZLZMA/_build/latest?definitionId=2
-	https://jacanovsts.visualstudio.com/ManagedXZLZMA/_build?buildId=42
-#>
+param (
+	[Parameter(Mandatory=$true)]
+    [string]$buildId
+)
 
 function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
 {
@@ -14,10 +14,10 @@ function DownloadAndExpandArtifact([string]$buildId, [string]$artifactName)
 if (Test-Path "artifacts") { Remove-Item "artifacts" -Force -Recurse }
 New-Item "artifacts" -type directory -force
 
-DownloadAndExpandArtifact "42" "android"
-DownloadAndExpandArtifact "42" "ios"
-DownloadAndExpandArtifact "42" "windows"
-DownloadAndExpandArtifact "42" "uwp"
+DownloadAndExpandArtifact $buildId "android"
+DownloadAndExpandArtifact $buildId "ios"
+DownloadAndExpandArtifact $buildId "windows"
+DownloadAndExpandArtifact $buildId "uwp"
 
 Copy-Item artifacts/windows/* src/ManagedXZLZMA/ManagedXZLZMA.Native/build/net45 -Force -Recurse
 Copy-Item artifacts/uwp/* src/ManagedXZLZMA/ManagedXZLZMA.Native/build/uap10.0 -Force -Recurse
